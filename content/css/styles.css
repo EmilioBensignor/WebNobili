@@ -1,0 +1,148 @@
+/* Estilos Generales */
+
+:root {
+  --color-white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Clases */
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.justifyAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowCenter {
+  display: flex;
+  align-items: center;
+}
+
+.bgContain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.pa-1 {
+  padding: 1rem;
+}
+
+/* Header */
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #362D25;
+}
+
+.hamburger {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  left: 1rem;
+  background-image: url("/content/images/Hamburger.svg");
+  cursor: pointer;
+}
+
+header img {
+  width: 6.25rem;
+}
+
+/* Nav */
+nav {
+  display: none;
+}
+
+/* Main */
+
+h1,
+h2 {
+  font-size: 1.5rem;
+  line-height: 22.97px;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 1rem;
+}
+
+/* Hero */
+
+.heroBg {
+  background-color: #6A4C30;
+}
+
+.hero {
+  gap: 1.25rem;
+}
+
+.hero p:first-of-type {
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.btnInfo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("/content/images/InfoButton.svg");
+}
+
+.masInfo {
+  gap: 1rem;
+}
+
+/* Sections */
+
+.section1 {
+  background-color: #252525;
+}
+
+.section2 {
+  background-color: #798D7F;
+}
+
+.section3 {
+  background-color: #1A1A1A;
+}
+
+footer {
+  background-color: #1A1A1A;
+}
+
+footer p {
+  color: white;
+}
