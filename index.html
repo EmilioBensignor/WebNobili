@@ -25,8 +25,15 @@
     <div id="openNav" class="hamburger bgContain"></div>
     <img src="/content/images/Nobili-Logo.png" alt="Nobili Logo" />
   </header>
-  <nav>
-    NAVEGADOR
+  <nav class="nav">
+    <div class="closeNav" id="closeNav"></div>
+    <ul class="navMenu">
+      <li><a href="#">PRODUCTOS</a></li>
+      <ul class="miniMenu column">
+        <li><a href="#">BAÑO</a></li>
+        <li><a href="#">COCINA</a></li>
+      </ul>
+    </ul>
   </nav>
   <main class="w-100 text-white">
     <section id="nobili" class="w-100 h-100vh heroBg justifyAlignCenter">
@@ -43,7 +50,7 @@
       </div>
     </section>
     <section id="nobili" class="w-100 h-100vh section1 justifyAlignCenter">
-      <div class="content">
+      <div class="content column">
         <h2 class="column">REBUSCADA <span>SIMPLICIDAD</span></h2>
         <p>
           Nuevas proporciones capaces de revertir la lógica más tradicional. Sole representa la síntesis perfecta entre
@@ -56,21 +63,70 @@
         </div>
       </div>
     </section>
-
-    <section id="nobili" class="h-100vh section2">
-      <div class="content">Sección 2</div>
+    <section id="nobili" class="w-100 h-100vh section2 justifyAlignCenter">
+      <div class="content column">
+        <h2 class="column">MDW 2024 <span>NOBILI PRESENTA</span> RESPIRO</h2>
+        <p>
+          La nueva serie de Respiro, la última maravilla de Nobili de Jesé Medina-Suárez.
+        </p>
+        <div class="masInfo rowCenter">
+          <p>MÁS INFORMACIÓN</p>
+          <div class="btnInfo bgContain"></div>
+        </div>
+      </div>
     </section>
-
-    <section id="nobili" class="h-100vh section3">
-      <div class="content">Sección 3</div>
+    <section id="nobili" class="w-100 h-100vh section3 justifyAlignCenter">
+      <div class="content column">
+        <h2 class="column">TECNOLOGÍA<span>ABSOLUTA</span></h2>
+        <p>
+          De la excelencia de nuestros laboratorios de investigación y desarrollo, nace el cartucho de inmersión total y
+          movimiento axial Nobili Widd®, con un diámetro de 34 mm, capaz de revolucionar la estructura de los
+          mezcladores tradicionales al eliminar el bloque del cartucho lateral y crear una línea extremadamente limpia y
+          estilizada.
+        </p>
+        <div class="masInfo rowCenter">
+          <p>MÁS INFORMACIÓN</p>
+          <div class="btnInfo bgContain"></div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div id="nobili">
-      <div class="content">
-        <p>FOOTER</p>
+  <footer id="nobili">
+    <div class="footerTop column content">
+      <div>
+        <img src="/content/images/Nobili-Logo.png" alt="Nobili Logo">
+        <img src="/content/images/Vasser-Logo.png" alt="Vasser Logo">
       </div>
+      <div>
+        <ul id="footerMenu" class="footerMenu"></ul>
+      </div>
+    </div>
+    <div class="w-100 text-white">
+      <div class="accordionItem">
+        <div class="accordionHeader" onclick="toggleAccordion(this)">
+          <p>DATOS EMPRESARIALES</p>
+          <span class="accordionIcon">+</span>
+        </div>
+        <div class="accordionContent">
+          <p>
+            CARLO NOBILI SPA RUBINETTERIE VIA LAGONE 32 - 28021 BORGOMANERO (NO)
+          </p>
+          <p>
+            CAPITALE SOCIALE: € 30.012.000 REA: NO - 114950 DELLA CCIAA DI NOVARA C.F. E P.IVA: 00260820030
+          </p>
+          <p>
+            OBBLIGHI INFORMATIVI PER LE EROGAZIONI PUBBLICHE: GLI AIUTI DI STATO E GLI AIUTI “DE MINIMIS” RICEVUTI SONO
+            CONTENUTI NEL REGISTRO NAZIONALE DEGLI AIUTI DI STATO DI CUI ALL’ART. 52 DL. N. 234 DEL 2012 PRESENTI SUL
+            SITO
+          </p>
+          <p>WWW.RNA.GOV.IT</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerRedesContainer">
+      <div id="redesFooter" class="redesFooter rowCenter"></div>
     </div>
   </footer>
 
