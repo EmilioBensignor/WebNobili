@@ -18,11 +18,15 @@ body {
 /* Clases */
 
 .w-100 {
-  width: 100%;
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
 }
 
 .h-100vh {
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .column {
@@ -169,7 +173,8 @@ h2 {
   background-color: #6A4C30;
 }
 
-.hero p:first-of-type {
+.content p {
+  width: 80%;
   font-size: 0.75rem;
   line-height: 18px;
 }
@@ -304,4 +309,33 @@ footer {
 
 .linkedInIcon {
   background-image: url("/content/images/LinkedIn-Icon.svg");
+}
+
+/* Tablet */
+@media only screen and (min-width: 660px) {
+  /* Header */
+  .header {
+    padding: 1.875rem 3.75rem;
+  }
+
+  header img {
+    width: 11.75rem;
+  }
+
+  .hamburger {
+    width: 1.875rem;
+  }
+  
+  h1, h2 {
+    font-size: 1.75rem;
+  }
+
+  .content p {
+    width: 60%;
+    font-size: 0.875rem;
+  }
+
+  .masInfo p {
+    font-size: 0.625rem !important;
+  }
 }
