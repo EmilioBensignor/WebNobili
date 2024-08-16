@@ -34,6 +34,12 @@ body {
   flex-direction: column;
 }
 
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .justifyCenter {
   display: flex;
   justify-content: center;
@@ -214,9 +220,14 @@ footer {
   padding: 3.75rem 1rem;
 }
 
+.logosFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 .footerTop img:first-of-type {
   width: 12.5rem;
-  margin-bottom: 0.8rem;
 }
 
 .footerTop img {
@@ -325,6 +336,8 @@ footer {
   .hamburger {
     width: 1.875rem;
   }
+
+  /* Generales */
   
   h1, h2 {
     font-size: 1.75rem;
@@ -337,5 +350,13 @@ footer {
 
   .masInfo p {
     font-size: 0.625rem !important;
+  }
+
+  /* Footer */
+
+  .logosFooter {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
 }
