@@ -1,75 +1,3 @@
-/* Estilos Generales */
-
-:root {
-  --color-white: #FFF;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-body {
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* Clases */
-
-.w-100 {
-  width: 100% !important;
-}
-
-.w-auto {
-  width: auto !important;
-}
-
-.h-100vh {
-  height: 100vh !important;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.columnCenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.justifyCenter {
-  display: flex;
-  justify-content: center;
-}
-
-.justifyAlignCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rowCenter {
-  display: flex;
-  align-items: center;
-}
-
-.bgContain {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.text-white {
-  color: var(--color-white);
-}
-
-.pa-1 {
-  padding: 1rem;
-}
-
 /* Header */
 
 header {
@@ -156,57 +84,6 @@ body.nav-open {
 
 .miniMenu li a {
   font-size: 0.875rem;
-}
-
-/* Main */
-
-h1,
-h2 {
-  font-size: 1.5rem;
-  line-height: 22.97px;
-}
-
-.content {
-  position: relative;
-  z-index: 10;
-  gap: 1.25rem;
-  padding: 0 1rem;
-}
-
-/* Hero */
-
-.heroBg {
-  background-color: #6A4C30;
-}
-
-.content p {
-  width: 80%;
-  font-size: 0.75rem;
-  line-height: 18px;
-}
-
-.btnInfo {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: url("/content/images/Info-Button.svg");
-}
-
-.masInfo {
-  gap: 1rem;
-}
-
-/* Sections */
-
-.section1 {
-  background-color: #252525;
-}
-
-.section2 {
-  background-color: #798D7F;
-}
-
-.section3 {
-  background-color: #1A1A1A;
 }
 
 /* Footer */
@@ -343,27 +220,6 @@ footer {
     padding: 3.125rem 3.75rem;
   }
 
-  /* Generales */
-
-  h1,
-  h2 {
-    font-size: 1.75rem;
-    line-height: 26.8px;
-  }
-
-  .content {
-    padding: 0 3.75rem;
-  }
-
-  .content p {
-    width: 60%;
-    font-size: 0.875rem;
-  }
-
-  .masInfo p {
-    font-size: 0.625rem !important;
-  }
-
   /* Footer */
 
   .footerTop {
@@ -385,8 +241,7 @@ footer {
   }
 }
 
-
-/* Tablet */
+/* Desktop */
 @media only screen and (min-width: 1080px) {
   /* Header */
 
@@ -404,27 +259,6 @@ footer {
 
   .miniMenu li a {
     font-size: 1.25rem;
-  }
-
-  /* Generales */
-
-  h1,
-  h2 {
-    font-size: 3rem;
-    line-height: 45.94px;
-  }
-
-  .content {
-    padding: 0 5.625rem;
-  }
-
-  .content p {
-    width: 50%;
-    font-size: 1rem;
-  }
-
-  .masInfo p {
-    font-size: 0.75rem !important;
   }
 
   /* Footer */

@@ -1,0 +1,71 @@
+/* Estilos Generales */
+
+:root {
+  --color-white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Clases */
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-100vh {
+  height: 100vh !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.justifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.justifyAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowCenter {
+  display: flex;
+  align-items: center;
+}
+
+.bgContain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.pa-1 {
+  padding: 1rem;
+}
