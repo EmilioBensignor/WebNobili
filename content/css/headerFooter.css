@@ -89,10 +89,11 @@ body.nav-open {
 /* Footer */
 
 footer {
+  position: relative;
   background-color: #1A1A1A;
 }
 
-.footerTop {
+footer .footerTop {
   gap: 2.5rem;
   padding: 3.75rem 1rem;
 }
@@ -103,11 +104,11 @@ footer {
   gap: 0.8rem;
 }
 
-.footerTop img:first-of-type {
+footer .footerTop img:first-of-type {
   width: 12.5rem;
 }
 
-.footerTop img {
+footer .footerTop img {
   width: 7.4rem;
 }
 
@@ -222,7 +223,7 @@ footer {
 
   /* Footer */
 
-  .footerTop {
+  footer .footerTop {
     padding: 3.75rem;
   }
 
@@ -263,7 +264,7 @@ footer {
 
   /* Footer */
 
-  .footerTop {
+  footer .footerTop {
     align-items: center;
     gap: 1.25rem;
     padding: 2.5rem 0;
