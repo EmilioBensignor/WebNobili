@@ -12,9 +12,9 @@
 
 body {
   /* Cambiar fuente */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow-x: hidden;
   position: relative;
+  font-family: 'Gotham Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Clases */

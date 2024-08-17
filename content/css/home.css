@@ -1,9 +1,18 @@
 /* Main */
 
+body {
+  background-color: #6A4C30;
+}
+
+main {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   font-size: 1.5rem;
   line-height: 22.97px;
+  font-weight: normal;
 }
 
 .content {
@@ -58,14 +67,17 @@ h2 {
     transform-origin: 0 0;
     transform: scale(1, 0);
   }
+
   50% {
     transform-origin: 0 0;
     transform: scale(1, 1);
   }
+
   50.1% {
     transform-origin: 0 100%;
     transform: scale(1, 1);
   }
+
   100% {
     transform-origin: 0 100%;
     transform: scale(1, 0);
@@ -132,19 +144,18 @@ h2 {
 
   .scroll {
     width: 1px;
-    height: 90px;
+    height: 65px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 1rem;
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 6.75rem;
+    bottom: 7.75rem;
     z-index: 3;
     margin: 0 auto;
   }
-  
+
   .scroll b {
     width: 100px;
     text-align: center;
@@ -152,26 +163,26 @@ h2 {
     font-weight: 600;
     color: #fff;
   }
-  
+
   .scroll span {
     display: block;
     /* position: relative; */
     text-align: center;
   }
-  
+
   .scroll span::before {
-    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    -webkit-animation: elasticus 1.7s cubic-bezier(1, 0, 0, 1) infinite;
+    -moz-animation: elasticus 1.7s cubic-bezier(1, 0, 0, 1) infinite;
+    -o-animation: elasticus 1.7s cubic-bezier(1, 0, 0, 1) infinite;
+    animation: elasticus 1.7s cubic-bezier(1, 0, 0, 1) infinite;
   }
-  
+
   .scroll span::before {
     position: absolute;
     top: 0px;
     left: 50%;
     width: 2px;
-    height: 60px;
+    height: 40px;
     background: #fff;
     content: "";
   }

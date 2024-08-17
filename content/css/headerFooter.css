@@ -4,7 +4,7 @@ header {
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: #362D25;
+  background-color: rgba(26, 28, 29, 0.4);
 }
 
 .hamburger {
