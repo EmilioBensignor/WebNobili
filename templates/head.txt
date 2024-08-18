@@ -1,3 +1,4 @@
 <link href="ico/favicon.png" rel="shortcut icon">
+<link rel="stylesheet" href="/content/css/gotham.css">
 <link rel="stylesheet" href="/content/css/main.css">
 <link rel="stylesheet" href="/content/css/headerFooter.css">
