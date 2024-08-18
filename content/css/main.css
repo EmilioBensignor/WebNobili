@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
 }
 
@@ -14,12 +15,8 @@ body {
   position: relative;
   font-family: 'Gotham Pro', sans-serif;
   overflow-x: hidden;
+  background-color: #1A1A1A;
   scroll-behavior: smooth;
-}
-
-header, nav .maxWidth, main, footer {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 /* Clases */
@@ -95,5 +92,20 @@ header, nav .maxWidth, main, footer {
 @media(prefers-reduced-motion) {
   .hidden {
     transition: none;
+  }
+}
+
+@media only screen and (min-width: 1930px) {
+
+  header,
+  nav .maxWidth,
+  main,
+  footer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  nav .maxWidth {
+    width: 100%;
   }
 }
