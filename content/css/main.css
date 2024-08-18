@@ -11,10 +11,15 @@
 }
 
 body {
-  /* Cambiar fuente */
   position: relative;
   font-family: 'Gotham Pro', sans-serif;
   overflow-x: hidden;
+}
+
+header, nav .maxWidth, main, footer {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* Clases */

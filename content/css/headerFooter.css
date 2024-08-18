@@ -72,7 +72,7 @@ body.nav-open {
 
 .navMenu li a {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
@@ -242,6 +242,32 @@ footer .footerTop img {
   }
 }
 
+@media only screen and (min-width: 770px) {
+  .navMenu li a {
+    font-size: 1.85rem;
+  }
+
+  .miniMenu li a {
+    font-size: 1rem;
+  }
+
+  .footerMenu li a,
+  .accordionHeader p,
+  .accordionContent p {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navMenu li a {
+    font-size: 2rem;
+  }
+
+  .miniMenu li a {
+    font-size: 1rem;
+  }
+}
+
 /* Desktop */
 @media only screen and (min-width: 1080px) {
   /* Header */
@@ -307,5 +333,39 @@ footer .footerTop img {
 
   .redesFooter {
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .navMenu li a {
+    font-size: 2.5rem;
+  }
+
+  .miniMenu li a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navMenu li a {
+    font-size: 2.675rem;
+  }
+
+  .miniMenu li a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .footerMenu li a,
+  .accordionHeader p,
+  .accordionContent p {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  .miniMenu li a {
+    font-size: 1.125rem;
   }
 }
