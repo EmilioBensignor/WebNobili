@@ -37,6 +37,25 @@ const redes = [
 ];
 
 // Nav
+const navLinks = document.querySelectorAll('.navLink');
+
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    navLinks.forEach(otherLink => {
+      if (otherLink !== link) {
+        otherLink.classList.add('faded');
+      }
+    });
+  });
+
+  link.addEventListener('mouseout', () => {
+    navLinks.forEach(otherLink => {
+      otherLink.classList.remove('faded');
+    });
+  });
+});
+
+
 document.getElementById('openNav').addEventListener('click', function () {
   document.querySelector('.nav').classList.add('open');
   document.body.classList.add('nav-open');

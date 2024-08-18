@@ -77,6 +77,7 @@ body.nav-open {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .miniMenu {
@@ -85,6 +86,12 @@ body.nav-open {
 
 .miniMenu li a {
   font-size: 0.875rem;
+  transition: opacity 0.3s ease;
+}
+
+.navMenu .faded:not(:hover),
+.miniMenu .faded:not(:hover) {
+  opacity: 0.3;
 }
 
 /* Footer */
@@ -358,6 +365,7 @@ footer .footerTop img {
 }
 
 @media only screen and (min-width: 1650px) {
+
   .footerMenu li a,
   .accordionHeader p,
   .accordionContent p {
