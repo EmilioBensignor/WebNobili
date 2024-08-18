@@ -10,6 +10,7 @@ nobili.forEach((section, index) => {
   });
 });
 
+// Scroll into View
 const hiddenElements = document.querySelectorAll('.hidden');
 
 const observer = new IntersectionObserver((entries) => {

@@ -164,7 +164,7 @@ h2 {
   /* Generales */
 
   .reversed {
-    max-width: 375px;
+    max-width: 500px;
     align-self: flex-end;
   }
 
@@ -179,6 +179,7 @@ h2 {
   }
 
   .content {
+    gap: 2rem;
     padding: 0 5.625rem;
   }
 
@@ -241,20 +242,42 @@ h2 {
   h1, h2 {
     font-size: 2.675rem;
   }
+
+  .reversed {
+    max-width: 600px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   h1, h2 {
     font-size: 2.875rem;
   }
+
+  .content {
+    gap: 3rem;
+  }
+
+  .reversed {
+    max-width: 700px;
+  }
 }
 
 @media only screen and (min-width: 1650px) {
+  .reversed {
+    max-width: 850px;
+  }
+  
   .content p {
     font-size: 1.125rem;
   }
 
   .masInfo p {
     font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  .reversed {
+    max-width: 950px;
   }
 }
