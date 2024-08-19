@@ -126,9 +126,15 @@ footer .footerTop img {
 
 .footerMenu li a {
   text-decoration: none;
-  color: white;
+  color: #b3b3b3;
   font-weight: 700;
   font-size: 0.625rem;
+  transition: all 0.3s ease;
+}
+
+.footerMenu li a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .accordionItem {
@@ -146,6 +152,7 @@ footer .footerTop img {
 
 .accordionHeader p {
   font-size: 0.625rem;
+  color: #b3b3b3;
 }
 
 .accordionIcon {
@@ -162,6 +169,7 @@ footer .footerTop img {
 
 .accordionContent p {
   font-size: 0.625rem;
+  color: #b3b3b3;
   line-height: 18px;
 }
 
