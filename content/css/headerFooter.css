@@ -4,7 +4,7 @@ header {
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: rgba(26, 28, 29, 0.4);
+  background-color: white;
   transition: background-color 0.3 ease;
 }
 
@@ -13,13 +13,14 @@ header {
   height: 1.25rem;
   position: absolute;
   left: 1rem;
-  background-image: url("/content/images/header-footer/Hamburger.svg");
+  background-image: url("/content/images/header-footer/Hamburger-Black.svg");
   cursor: pointer;
 }
 
 .logoNobili {
   width: 4rem;
   height: 1.438rem;
+  background-image: url("/content/images/header-footer/nobili-logo-negro.png");
 }
 
 /* Nav */

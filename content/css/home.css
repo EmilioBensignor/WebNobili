@@ -1,4 +1,4 @@
-/* Main */
+/* Header Home */
 
 header {
   background-color: #4A3929;
@@ -7,6 +7,12 @@ header {
 .logoNobili {
   background-image: url("/content/images/header-footer/logo-nobili-blanco.webp");
 }
+
+.hamburger {
+  background-image: url("/content/images/header-footer/Hamburger-White.svg");
+}
+
+/* Main */
 
 main {
   scroll-behavior: smooth;
