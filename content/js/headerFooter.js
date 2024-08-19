@@ -16,23 +16,23 @@ const menuFooter = [
 const redes = [
   {
     img: "facebookIcon",
-    link: "#",
+    link: "https://www.facebook.com/NobiliMadeinItaly"
   },
   {
     img: "instagramIcon",
-    link: "#",
+    link: "https://www.instagram.com/nobili_madeinitaly/",
   },
   {
     img: "pinterestIcon",
-    link: "#",
+    link: "https://it.pinterest.com/nobili_madeinitaly/",
   },
   {
     img: "youtubeIcon",
-    link: "#",
+    link: "https://www.youtube.com/@nobili_madeinitaly",
   },
   {
     img: "linkedInIcon",
-    link: "#",
+    link: "https://www.linkedin.com/company/nobilimadeinitaly/",
   },
 ];
 
@@ -90,6 +90,6 @@ function toggleAccordion(element) {
 
 for (let redFooter = 0; redFooter < redes.length; redFooter++) {
   redesFooter.innerHTML += `
-    <a class="${redes[redFooter].img} iconRed bgContain" href="${redes[redFooter].link}"></a>
+    <a class="${redes[redFooter].img} iconRed bgContain" href="${redes[redFooter].link}" target="_blank"></a>
   `;
 }

@@ -151,9 +151,10 @@ footer .footerTop img {
   cursor: pointer;
 }
 
-.accordionHeader p {
+.accordionHeader p, .accordionContent p {
   font-size: 0.625rem;
   color: #b3b3b3;
+  font-weight: 500;
 }
 
 .accordionIcon {
@@ -169,8 +170,6 @@ footer .footerTop img {
 }
 
 .accordionContent p {
-  font-size: 0.625rem;
-  color: #b3b3b3;
   line-height: 18px;
 }
 
