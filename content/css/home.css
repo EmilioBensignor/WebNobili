@@ -4,6 +4,10 @@ header {
   background-color: #4A3929;
 }
 
+.logoNobili {
+  background-image: url("/content/images/header-footer/logo-nobili-blanco.webp");
+}
+
 main {
   scroll-behavior: smooth;
 }
