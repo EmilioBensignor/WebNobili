@@ -13,12 +13,12 @@ header {
   height: 1.25rem;
   position: absolute;
   left: 1rem;
-  background-image: url("/content/images/Hamburger.svg");
+  background-image: url("/content/images/header-footer/Hamburger.svg");
   cursor: pointer;
 }
 
 header img {
-  width: 6.25rem;
+  width: 4rem;
 }
 
 /* Nav */
@@ -49,7 +49,7 @@ header img {
 .closeNav {
   width: 1.25rem;
   height: 1.25rem;
-  background-image: url("/content/images/Close-Icon.svg");
+  background-image: url("/content/images/header-footer/Close-Icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -113,7 +113,7 @@ footer .footerTop {
 }
 
 footer .footerTop img:first-of-type {
-  width: 12.5rem;
+  width: 6rem;
 }
 
 footer .footerTop img {
@@ -189,23 +189,23 @@ footer .footerTop img {
 }
 
 .facebookIcon {
-  background-image: url("/content/images/Facebook-Icon.svg");
+  background-image: url("/content/images/header-footer/Facebook-Icon.svg");
 }
 
 .instagramIcon {
-  background-image: url("/content/images/Instagram-Icon.svg");
+  background-image: url("/content/images/header-footer/Instagram-Icon.svg");
 }
 
 .pinterestIcon {
-  background-image: url("/content/images/Pinterest-Icon.svg");
+  background-image: url("/content/images/header-footer/Pinterest-Icon.svg");
 }
 
 .youtubeIcon {
-  background-image: url("/content/images/Youtube-Icon.svg");
+  background-image: url("/content/images/header-footer/Youtube-Icon.svg");
 }
 
 .linkedInIcon {
-  background-image: url("/content/images/LinkedIn-Icon.svg");
+  background-image: url("/content/images/header-footer/LinkedIn-Icon.svg");
 }
 
 /* Tablet */
@@ -213,11 +213,11 @@ footer .footerTop img {
 
   /* Header */
   .header {
-    padding: 1.875rem 3.75rem;
+    padding: 1.5rem 3.75rem;
   }
 
   header img {
-    width: 11.75rem;
+    width: 7rem;
   }
 
   .hamburger {
@@ -281,7 +281,7 @@ footer .footerTop img {
   /* Header */
 
   .header {
-    padding: 1.875rem 5.625rem;
+    padding: 1.5rem 5.625rem;
   }
 
   .hamburger {
