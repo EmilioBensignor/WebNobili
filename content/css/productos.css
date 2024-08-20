@@ -1,0 +1,54 @@
+.filterContainer {
+  gap: 1.25rem;
+  border-top: 2px solid rgba(238, 238, 238, 1);
+  border-bottom: 2px solid rgba(238, 238, 238, 1);
+  padding: 1.25rem 0;
+}
+
+.filterButton {
+  background-color: transparent;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgba(26, 26, 26, 0.3);
+  cursor: pointer;
+}
+
+.filterButton.active {
+  color: rgba(26, 26, 26, 1);
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 0.8rem;
+  row-gap: 2.5rem;
+  padding: 1.25rem 1rem 2.5rem 1rem;
+}
+
+.productItem {
+  width: 45%;
+  gap: 1.813rem;
+}
+
+.productItem img {
+  width: 8.125rem;
+}
+
+.productDescription {
+  gap: 0.313rem;
+}
+
+.productDescription p:first-of-type {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 15.31px;
+  color: rgba(26, 26, 26, 1);
+}
+
+.productDescription p:last-of-type {
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: rgba(26, 26, 26, 0.4);
+}

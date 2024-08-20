@@ -42,8 +42,12 @@
       </ul>
     </div>
   </nav>
-  <main class="w-100">
-
+  <main class="w-100 bg-white">
+    <div class="filterContainer columnAlignCenter text-center">
+      <button class="filterButton" data-category="bano" onclick="filterProducts('bano')">BAÑO</button>
+      <button class="filterButton" data-category="cocina" onclick="filterProducts('cocina')">COCINA</button>
+    </div>
+    <div id="productList" class="productList"></div>
   </main>
   <!--footer-->
   <footer id="nobili">
@@ -88,6 +92,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="/content/js/main.js"></script>
   <script src="/content/js/headerFooter.js"></script>
+  <script src="/content/js/productos.js"></script>
 </body>
 
 </html>
