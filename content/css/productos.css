@@ -52,3 +52,27 @@
   line-height: 14px;
   color: rgba(26, 26, 26, 0.4);
 }
+
+@media only screen and (min-width: 660px) {
+  .filterContainer {
+    gap: 4.2rem;
+  }
+
+  .productList {
+    row-gap: 3.75rem;
+    column-gap: 2.5rem;
+    padding: 1.875rem 3.75rem 3.125rem 1.875rem;
+  }
+
+  .productItem img {
+    width: 12.5rem;
+  }
+
+  .productDescription p:first-child {
+    font-size: 1.188rem;
+  }
+
+  .productDescription p:last-of-type {
+    font-size: 0.875rem;
+  }
+}
