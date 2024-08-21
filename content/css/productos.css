@@ -30,6 +30,12 @@
 .productItem {
   width: 45%;
   gap: 1.813rem;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+}
+
+.productItem.faded:not(:hover) {
+  opacity: 0.3;
 }
 
 .productItem img {
@@ -53,6 +59,7 @@
   color: rgba(26, 26, 26, 0.4);
 }
 
+/* Tablet */
 @media only screen and (min-width: 660px) {
   .filterContainer {
     gap: 4.2rem;
@@ -61,7 +68,7 @@
   .productList {
     row-gap: 3.75rem;
     column-gap: 2.5rem;
-    padding: 1.875rem 3.75rem 3.125rem 1.875rem;
+    padding: 1.875rem 3.75rem 3.125rem 3.75rem;
   }
 
   .productItem img {
@@ -74,5 +81,16 @@
 
   .productDescription p:last-of-type {
     font-size: 0.875rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+  .productList {
+    padding: 1.875rem 5.625rem 3.125rem 5.625rem;
+  }
+
+  .productItem {
+    width: 30%;
   }
 }
