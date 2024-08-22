@@ -84,6 +84,13 @@ const products = [
     image: "sand-bano.png",
     link: "#"
   },
+  {
+    name: "SEVEN",
+    category: "cocina",
+    designer: "Cocina",
+    image: "sand-bano.png",
+    link: "#"
+  },
 ];
 
 function filterProducts(category) {
