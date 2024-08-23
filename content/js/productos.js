@@ -1,123 +1,17 @@
-const products = [
-  {
-    name: "ABC",
-    category: "bano",
-    designer: "Centro Stile",
-    image: "abc-bano.png",
-    link: "#"
-  },
-  {
-    name: "SAND",
-    category: "bano",
-    designer: "Meneghello Paolelli Associati",
-    image: "seven-bano.png",
-    link: "#"
-  },
-  {
-    name: "SEVEN",
-    category: "bano",
-    designer: "Centro Stile",
-    image: "sand-bano.png",
-    link: "#"
-  },
-  {
-    name: "ABC",
-    category: "bano",
-    designer: "Centro Stile",
-    image: "abc-bano.png",
-    link: "#"
-  },
-  {
-    name: "SAND",
-    category: "bano",
-    designer: "Meneghello Paolelli Associati",
-    image: "seven-bano.png",
-    link: "#"
-  },
-  {
-    name: "SEVEN",
-    category: "bano",
-    designer: "Centro Stile",
-    image: "sand-bano.png",
-    link: "#"
-  },
+function filtrarProductos(tipo) {
+  const productos = document.querySelectorAll('.productItem');
 
-  {
-    name: "ABC",
-    category: "cocina",
-    designer: "Cocina",
-    image: "abc-bano.png",
-    link: "#"
-  },
-  {
-    name: "SAND",
-    category: "cocina",
-    designer: "Cocina",
-    image: "seven-bano.png",
-    link: "#"
-  },
-  {
-    name: "SEVEN",
-    category: "cocina",
-    designer: "Cocina",
-    image: "sand-bano.png",
-    link: "#"
-  },
-  {
-    name: "ABC",
-    category: "cocina",
-    designer: "Cocina",
-    image: "abc-bano.png",
-    link: "#"
-  },
-  {
-    name: "SAND",
-    category: "cocina",
-    designer: "Cocina",
-    image: "seven-bano.png",
-    link: "#"
-  },
-  {
-    name: "SEVEN",
-    category: "cocina",
-    designer: "Cocina",
-    image: "sand-bano.png",
-    link: "#"
-  },
-  {
-    name: "SEVEN",
-    category: "cocina",
-    designer: "Cocina",
-    image: "sand-bano.png",
-    link: "#"
-  },
-];
-
-function filterProducts(category) {
-  const productList = document.getElementById("productList");
-  productList.innerHTML = "";
-
-  const filteredProducts = products.filter(product => product.category === category);
-
-  filteredProducts.forEach(product => {
-    const productItem = document.createElement("a");
-    productItem.className = "productItem columnAlignCenter text-center";
-    productItem.href = product.link;
-    productItem.innerHTML = `
-      <img src="/content/images/productos/${product.image}" alt="${product.name}">
-      <div class="productDescription columnAlignCenter">
-        <p>${product.name}</p>
-        <p>${product.designer}</p>
-      </div>
-    `;
-    productList.appendChild(productItem);
+  productos.forEach(producto => {
+    producto.style.display = 'none';
   });
 
-  document.querySelectorAll('.filterButton').forEach(button => button.classList.remove('active'));
-  document.querySelector(`button[data-category="${category}"]`).classList.add('active');
+  const productosFiltrados = document.querySelectorAll(`.productItem[data-tipo="${tipo}"]`);
+  productosFiltrados.forEach(producto => {
+    producto.style.display = 'flex';
+  });
 }
 
-filterProducts("bano");
+filtrarProductos("bano");
 
 const productItem = document.querySelectorAll('.productItem');
 
