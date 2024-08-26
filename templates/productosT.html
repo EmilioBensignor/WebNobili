@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/content/css/productos.css">
 </head>
 
-<body>
+<body onload="filtrarProductos('bano');">
   <!--header-->
   <main class="w-100 bg-white">
     <div class="filterContainer justifyAlignCenter text-center">
@@ -32,8 +32,10 @@
       <!--producto-->
         <a href="/cgi-bin/nbproducto.pl?id=<!--id-->" data-tipo="<!--tip-->" class="productItem columnAlignCenter text-center">
           <img src="/images/<!--img-->" alt="<!--nom-->" />
-          <p><!--nom--></p>
-          <p><!--dis--></p>
+          <div class="productDescription columnAlignCenter">
+            <p><!--des--></p>
+            <p><!--dsn--></p>
+          </div>
         </a>
       <!--finproducto-->
     </div>

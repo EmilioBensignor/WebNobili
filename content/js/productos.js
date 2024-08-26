@@ -11,7 +11,23 @@ function filtrarProductos(tipo) {
   });
 }
 
+const botones = document.querySelectorAll('.filterButton');
+
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    botones.forEach(b => b.classList.remove('active'));
+    boton.classList.add('active');
+    let tipo = boton.textContent.trim().toLowerCase().replace('ñ', 'n');
+    filtrarProductos(tipo);
+  });
+});
+
 filtrarProductos("bano");
+
+const botonBano = [...botones].find(boton => boton.textContent.trim().toLowerCase() === 'baño');
+if (botonBano) {
+  botonBano.classList.add('active');
+}
 
 const productItem = document.querySelectorAll('.productItem');
 

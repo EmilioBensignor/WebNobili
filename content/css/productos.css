@@ -11,6 +11,7 @@
   font-size: 0.75rem;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   color: rgba(26, 26, 26, 0.3);
   cursor: pointer;
 }
@@ -44,7 +45,7 @@
 }
 
 .productDescription {
-  gap: 0.313rem;
+  gap: 0.625rem;
 }
 
 .productDescription p:first-of-type {
