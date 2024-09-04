@@ -1,0 +1,153 @@
+main {
+  box-sizing: border-box;
+}
+
+/* Hero */
+
+.heroLineaProducto {
+  height: 30rem;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  background-color: #798D7F;
+  color: white;
+  padding: 1rem 1rem 1.875rem 1rem;
+}
+
+.heroLineaProducto a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 9.57px;
+}
+
+.heroLineaProducto h1 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.heroLineaProducto p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 17.23px;
+}
+
+/* Modelos */
+
+.modelos {
+  gap: 3.5rem;
+  padding: 3.5rem 1rem;
+}
+
+.modelos>p:first-of-type {
+  font-size: 1.125rem;
+  line-height: 18px;
+}
+
+/* Opciones Modelos */
+
+.opcionesModelos {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.modelo {
+  width: 50%;
+  gap: 1.25rem;
+}
+
+.modelo>img {
+  width: 5.4rem;
+}
+
+.detalle p:first-child {
+  color: var(--color-black);
+  margin-bottom: 0.625rem;
+}
+
+.detalle p {
+  color: #1A1A1A66;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 11.48px;
+  margin-bottom: 0.875rem;
+}
+
+.detalleColor {
+  gap: 0.625rem;
+}
+
+.detalle .detalleColor p {
+  color: var(--color-black);
+  font-size: 0.625rem;
+  line-height: 9.57px;
+  margin-bottom: 0;
+}
+
+.todosModelos {
+  position: relative;
+  background-color: var(--color-black);
+  border: none;
+  color: var(--color-white);
+  font-size: 0.625rem;
+  font-family: 'Gotham Pro', sans-serif;
+  line-height: 9.57px;
+  padding: 1rem 2.375rem 1rem 0.75rem;
+}
+
+.todosModelos::after {
+  content: "";
+  width: 1rem;
+  height: 0.75rem;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background-image: url("/content/images/lineaProducto/Icon-Flecha.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Caracteristicas */
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caracteristica h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-black);
+  line-height: 18px;
+  margin-bottom: 1.25rem;
+}
+
+.caracteristica p {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+
+.caracteristica img {
+  width: 100%;
+  margin-bottom: 3.125rem;
+}
+
+.grifosNobili {
+  width: 100%;
+}
+
+.verModelos {
+  background-color: var(--color-black);
+  border: none;
+  color: var(--color-white);
+  font-size: 0.625rem;
+  font-family: 'Gotham Pro', sans-serif;
+  line-height: 9.57px;
+  text-decoration: none;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+}

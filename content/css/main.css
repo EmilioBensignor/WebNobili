@@ -2,6 +2,7 @@
 
 :root {
   --color-white: #FFF;
+  --color-black: #1a1a1a;
 }
 
 * {
@@ -35,6 +36,10 @@ body {
 
 .d-none {
   display: none !important;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .column {
@@ -86,6 +91,10 @@ body {
 
 .text-white {
   color: var(--color-white);
+}
+
+.text-black {
+  color: var(--color-black);
 }
 
 .pa-1 {
