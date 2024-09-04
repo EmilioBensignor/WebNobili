@@ -1,3 +1,7 @@
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
 header {
   background-color: #272F40;
   padding: 1.75rem 1rem;
@@ -9,6 +13,8 @@ main {
 
 .lineaDorada {
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .textoDorado {
@@ -101,6 +107,16 @@ form p {
   line-height: 16px;
 }
 
+form div {
+  width: 100%;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 form input {
   width: 100%;
   background: rgba(228, 228, 228, 1);
@@ -137,6 +153,7 @@ form button {
   border-radius: 12px;
   font-size: 1rem;
   padding: 0.688rem 1.25rem;
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -146,6 +163,14 @@ form button span {
   line-height: 26px;
   z-index: 1;
 }
+
+.mensajeError {
+  color: #FC4747;
+  display: none;
+  font-size: 0.75rem;
+}
+
+/* Video - No te lo pierdas */
 
 video {
   width: 100%;
@@ -170,6 +195,7 @@ video {
   border-bottom: none;
   color: #ACBBD9;
   padding: 0.75rem 1.25rem;
+  margin-bottom: -0.15rem;
   overflow: hidden;
 }
 
@@ -197,6 +223,8 @@ video {
   font-weight: 700;
 }
 
+/* Direccion */
+
 .direccionMaps {
   gap: 1.25rem;
   padding: 1.875rem 0.75rem 3.75rem 0.75rem;
@@ -209,6 +237,7 @@ video {
   border-radius: 12px;
   border-bottom: none;
   color: #ACBBD9;
+  font-size: 0.875rem;
   padding: 1rem 0.75rem;
   overflow: hidden;
 }
@@ -231,4 +260,22 @@ video {
   font-weight: 800;
   line-height: 18px;
   z-index: 1;
+}
+
+/* Footer */
+
+footer {
+  background-color: #272F40;
+  padding: 0.875rem 0.75rem;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 0.625rem;
+  line-height: 14.24px;
+}
+
+footer p span {
+  font-weight: 500;
 }

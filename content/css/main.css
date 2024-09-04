@@ -33,6 +33,10 @@ body {
   height: 100vh !important;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -76,7 +80,7 @@ body {
   text-align: center;
 }
 
-.bg-white { 
+.bg-white {
   background-color: var(--color-white);
 }
 
@@ -86,6 +90,30 @@ body {
 
 .pa-1 {
   padding: 1rem;
+}
+
+/* Errors */
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.errorIcon {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url("/content/images/landingEvento/Icon-Error.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.error p {
+  text-align: start;
+  color: #F50000;
+  font-size: 0.75rem;
+  line-height: 16.44px;
 }
 
 /* Scroll */
