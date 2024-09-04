@@ -41,6 +41,7 @@ main {
 }
 
 .invitacion {
+  max-width: 380px;
   gap: 1.25rem;
 }
 
@@ -102,7 +103,7 @@ form {
 
 form h2 {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 26px;
 }
 
@@ -127,6 +128,7 @@ form input {
   background: rgba(228, 228, 228, 1);
   border: 2px solid rgba(22, 28, 38, 1);
   border-radius: 8px;
+  font-family: "Source Sans 3", sans-serif;
   font-size: 0.75rem;
   line-height: 16px;
   padding: 1rem 1.25rem;
@@ -164,7 +166,8 @@ form button {
 
 form button span {
   position: relative;
-  font-weight: 700;
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
   line-height: 26px;
   z-index: 1;
 }
@@ -188,19 +191,20 @@ video {
 
 .noTePierdasIntro {
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   line-height: 20px;
 }
 
 .datosEvento {
   width: 100%;
+  max-width: 395px;
   gap: 1.25rem;
   position: relative;
   border-radius: 18px 18px 0 0;
   border-bottom: none;
   color: #ACBBD9;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: -0.15rem;
+  padding: 1.25rem;
+  margin-bottom: -0.2rem;
   overflow: hidden;
 }
 
@@ -232,7 +236,7 @@ video {
 
 .direccionMaps {
   gap: 1.25rem;
-  padding: 1.875rem 0.75rem 3.75rem 0.75rem;
+  padding: 1.875rem 0.75rem 2.5rem 0.75rem;
 }
 
 .direccion {
@@ -285,6 +289,12 @@ footer p span {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 480px){
+  .direccion p {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (min-width: 700px) {
 
   /* Header */
@@ -296,7 +306,7 @@ footer p span {
 
   .invitacionForm {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.875rem 2.5rem;
   }
 
@@ -318,6 +328,7 @@ footer p span {
 
   .invitacionForm form {
     width: 50%;
+    max-width: 380px;
   }
 
   form h2 {
@@ -410,6 +421,7 @@ footer p span {
 
   .invitacionForm form {
     width: 45%;
+    max-width: 510px;
   }
 
   form h2 {
@@ -423,7 +435,8 @@ footer p span {
   }
 
   form input {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
   }
 
   form button {
@@ -468,5 +481,12 @@ footer p span {
   .direccion p {
     font-size: 1.25rem;
     line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .direccion p {
+    font-size: 1.5rem;
+    line-height: 26px;
   }
 }
