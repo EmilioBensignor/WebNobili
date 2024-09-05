@@ -109,6 +109,43 @@ main {
   background-repeat: no-repeat;
 }
 
+/* Colores */
+.containerProductos {
+  text-align: center;
+}
+
+.imagenProducto {
+  width: 200px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.opcionesColores {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circuloColor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circuloColor:hover {
+  transform: scale(1.2);
+}
+
+#colorName {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
 /* Caracteristicas */
 
 .caracteristica {
