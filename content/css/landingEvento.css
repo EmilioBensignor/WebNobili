@@ -289,7 +289,7 @@ footer p span {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 480px) {
   .direccion p {
     font-size: 1rem;
   }
@@ -299,7 +299,7 @@ footer p span {
 
   /* Header */
   header {
-    padding: 1.75rem 1rem;
+    padding: 1.75rem 1rem; 
   }
 
   /* Invitacion - Form */
@@ -312,7 +312,7 @@ footer p span {
 
   .invitacionForm .invitacion {
     width: 45%;
-    gap: 2.5rem;
+    gap: 4rem;
     padding: 0 1.875rem;
   }
 
