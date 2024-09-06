@@ -6,18 +6,20 @@ const email = document.getElementById("email");
 
 formRegistrate.addEventListener("submit", function (event) {
   event.preventDefault();
-  validarFormulario();
+  if (validarFormulario()) {
+    registrar();
+  } else {
+    console.log("Formulario inválido, no se llama a registrar()");
+  }
 });
 
 function validarFormulario() {
   let isValid = true;
 
-  // Resetear los mensajes de error al inicio
   document.querySelectorAll('.error').forEach(function (element) {
     element.classList.add('d-none');
   });
 
-  // Validaciones de campos
   if (!nombre.value.trim()) {
     document.getElementById('errorNombre').classList.remove('d-none');
     document.getElementById('errorTextoNombre').textContent = "Ingresa tu nombre";
@@ -59,14 +61,42 @@ function validarFormulario() {
     isValid = false;
   }
 
-  // Enviar el formulario si es válido
-  if (isValid) {
-    console.log("Formulario Enviado");
-    enviarFormulario();
-  }
-};
+  return isValid;
+}
 
-function enviarFormulario() {
-  console.log("Datos enviados: ", nombre.value, apellido.value, telefono.value, email.value);
-  formRegistrate.reset();
+function registrar() {
+  var formData = new FormData(formRegistrate);
+
+  fetch("/cgi-bin/nbreg.pl", {
+    method: "POST",
+    body: formData,
+    credentials: "include",
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error en la solicitud');
+      }
+      return response.text();
+    })
+    .then(data => {
+      const modal = document.getElementById("modal");
+      const modalCloseBtn = document.getElementById("modalCloseBtn");
+
+      modal.style.display = "block";
+
+      modalCloseBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      formRegistrate.reset();
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
 }
