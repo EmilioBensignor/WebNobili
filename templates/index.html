@@ -18,11 +18,17 @@
   <header class="columnAlignCenter">
     <img src="/content/images/landingEvento/Logo-Vasser-Evento.png" alt="Logo Vasser" />
   </header>
+  <div id="modal" class="modal">
+    <div class="modalContenido">
+      <div id="modalCloseBtn" class="close bgContain"></div>
+      <p>Gracias por registrarte.</p>
+    </div>
+  </div>
   <main class="column">
     <section class="invitacionForm columnAlignCenter">
       <div class="invitacion columnAlignCenter">
         <p class="intro textoDorado">
-          <span class="vasser">VASSER</span> tiene el honor de invitarle a un evento para descubrir lo extraordinario.
+          <span class="vasser">VASSER</span> tiene el honor de invitarle a un evento para vivir una experiencia única.
         </p>
         <div class="fechaEvento bordeDorado">
           <p>
@@ -35,42 +41,43 @@
       </div>
       <form class="columnAlignCenter" id="formRegistrate">
         <h2 class="textoDorado">REGISTRATE</h2>
-        <p>Completá los datos de registro y participá del evento</p>
+        <p>Completá los datos de registro</p>
         <div>
-          <input id="nombre" placeholder="Nombre" type="text">
+          <input id="nombre" placeholder="Nombre" type="text" name="nom">
           <div id="errorNombre" class="error d-none">
             <div class="errorIcon"></div>
             <p id="errorTextoNombre"></p>
           </div>
         </div>
         <div>
-          <input id="apellido" placeholder="Apellido" type="text">
+          <input id="apellido" placeholder="Apellido" type="text" name="ape">
           <div id="errorApellido" class="error d-none">
             <div class="errorIcon"></div>
             <p id="errorTextoApellido"></p>
           </div>
         </div>
         <div>
-          <input class="telefono" id="telefono" placeholder="Teléfono de WhatsApp" type="number">
+          <input class="telefono" id="telefono" placeholder="Teléfono de WhatsApp" type="number" name="wap">
           <div id="errorTelefono" class="error d-none">
             <div class="errorIcon"></div>
             <p id="errorTextoTelefono"></p>
           </div>
         </div>
         <div>
-          <input id="email" placeholder="Correo electrónico" type="email" autocomplete="off">
+          <input id="email" placeholder="Correo electrónico" type="email" autocomplete="off" name="eml">
           <div id="errorEmail" class="error d-none">
             <div class="errorIcon"></div>
             <p id="errorTextoEmail"></p>
           </div>
         </div>
+        <input type="hidden" name="evt_id" value="1">
         <button type="submit" id="submitButton">
           <span class="textoDorado">REGISTRARME</span>
         </button>
       </form>
 
     </section>
-    <img class="lineaDorada" src="/content/images/landingEvento/bg-dorado.png" alt="Linea Dorada">
+    <div class="lineaDorada"></div>
     <section class="videoNoPierdas">
       <video src="/content/images/landingEvento/Video-Vasser.mp4" autoplay muted></video>
       <div class="noTePierdas columnAlignCenter">
@@ -81,27 +88,27 @@
             <p class="datosBold">19:00hs</p>
           </div>
           <div>
-            <p class="datosBold">TE ESPERAMOS EN:</p>
             <p>HOTEL FAENA</p>
           </div>
           <div>
-            <p class="datosBold">Dirección:</p>
             <p>Petrona Eyle 430, Ciudad Autónoma de Buenos Aires</p>
           </div>
         </div>
       </div>
     </section>
-    <img class="lineaDorada" src="/content/images/landingEvento/bg-dorado.png" alt="Linea Dorada">
+    <div class="lineaDorada"></div>
     <section class="direccionMaps columnAlignCenter">
       <img class="logoVasserMaps" src="/content/images/landingEvento/Logo-Vasser-Evento.png" alt="Logo Vasser" />
       <div class="direccion bordeDorado">
         <p>9 de Octubre de 2024 - 19:00hs</p>
         <p>HOTEL FAENA - Petrona Eyle 430, Ciudad Autónoma de Buenos Aires</p>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.58679949499!2d-58.36438242367091!3d-34.61460867295026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d76d5e5f9b%3A0x20714491e460672d!2sPetrona%20Eyle%20430%2C%20C1107%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725465677575!5m2!1ses-419!2sar"
-        width="100%" height="410" style="border:10px solid white; border-radius: 8px;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <a href="https://maps.app.goo.gl/72RVTER4x8imNgZg7" target="_blank" class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.58679949499!2d-58.36438242367091!3d-34.61460867295026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d76d5e5f9b%3A0x20714491e460672d!2sPetrona%20Eyle%20430%2C%20C1107%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725465677575!5m2!1ses-419!2sar"
+          width="100%" height="410" style="border:10px solid white; border-radius: 8px;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </a>
     </section>
   </main>
   <footer>
