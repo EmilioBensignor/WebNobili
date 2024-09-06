@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/content/css/gotham.css">
   <link rel="stylesheet" href="/content/css/main.css">
   <link rel="stylesheet" href="/content/css/headerFooter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/content/css/lineaProducto.css">
 </head>
 
@@ -55,6 +56,22 @@
         totalmente respetuoso con el medio ambiente: el cartucho de inmersión Nobili Widd® es garantía de absoluta
         fiabilidad y máxima sostenibilidad.
       </p>
+      <div class="containerProductos">
+        <img id="imagenProducto" class="imagenProducto" src="/content/images/lineaProducto/grifoColor1.png" alt="">
+        <div class="opcionesColores">
+          <div class="bordeColor" data-color="Cromo brillo" data-image="/content/images/lineaProducto/grifoColor1.png"
+            data-selected="true">
+            <div class="circuloColor" style="background-image: url('/content/images/lineaProducto/opcionColor1.png');">
+            </div>
+          </div>
+          <div class="bordeColor" data-color="Negro mate" data-image="/content/images/lineaProducto/grifoColor2.png">
+            <div class="circuloColor" style="background-image: url('/content/images/lineaProducto/opcionColor2.png');">
+            </div>
+          </div>
+        </div>
+        <p id="colorName"></p>
+      </div>
+      </div>
       <div class="opcionesModelos">
         <article class="modelo column">
           <img src="/content/images/lineaProducto/grifoEjemplo.png" alt="Grifo Ejemplo">
@@ -80,15 +97,11 @@
         </article>
       </div>
       <button class="todosModelos">TODOS LOS MODELOS</button>
-      <div class="containerProductos">
-        <img id="imagenProducto" class="imagenProducto" src="/content/images/lineaProducto/grifoColor1.png" alt="">
-        <div class="opcionesColores">
-          <div class="circuloColor" data-color="Cromo brillo" data-image="/content/images/lineaProducto/grifoColor1.png" style="background-color: #dcdcdc;"></div>
-          <div class="circuloColor" data-color="Negro mate" data-image="/content/images/lineaProducto/grifoColor2.png" style="background-color: #333;"></div>
-        </div>
-        <p id="colorName">Cromo brillo</p>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div id="swiperWrapper" class="swiper-wrapper"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      // SWIPER
       <div class="caracteristica">
         <h2>DEDICADO AL PLANETA</h2>
         <p>
@@ -129,7 +142,9 @@
       <div class="caracteristica">
         <h2>MADE IN NOBILI</h2>
         <p>
-          Abc nace del procesamiento de bloques de latón dentro del avanzado departamento de fundición a baja presión del Nobili Technology Centre, el complejo más eficiente de todo el sector, concebido para admitir un crecimiento constante y ofrecer al mercado un estándar de alta calidad con un impacto medioambiental muy bajo.
+          Abc nace del procesamiento de bloques de latón dentro del avanzado departamento de fundición a baja presión
+          del Nobili Technology Centre, el complejo más eficiente de todo el sector, concebido para admitir un
+          crecimiento constante y ofrecer al mercado un estándar de alta calidad con un impacto medioambiental muy bajo.
         </p>
         <a class="verModelos" href="#opcionesModelos">VER TODOS LOS MODELOS</a>
       </div>
@@ -178,6 +193,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="/content/js/main.js"></script>
   <script src="/content/js/headerFooter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/content/js/lineaProducto.js"></script>
 </body>
 
