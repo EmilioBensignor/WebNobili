@@ -6,6 +6,20 @@ const modelColorTexts = document.querySelectorAll('.detalleColor p');
 const modelColorIcons = document.querySelectorAll('.detalleColor img');
 const swiperWrapper = document.getElementById('swiperWrapper');
 
+const cmsData = {
+  "Cromo brillo": {
+    "modelo1": "/content/images/lineaProducto/grifoColor1.png",
+    "modelo2": "/content/images/lineaProducto/grifoColor1.png",
+    "modelo3": "/content/images/lineaProducto/grifoColor1.png"
+  },
+  "Negro mate": {
+    "modelo1": "/content/images/lineaProducto/grifoColor2.png",
+    "modelo2": "/content/images/lineaProducto/grifoColor2.png",
+    "modelo3": "/content/images/lineaProducto/grifoColor2.png"
+  }
+}
+
+
 const slides = [
   {
     img: "galeria1.jpg",
@@ -31,20 +45,7 @@ const slides = [
   {
     img: "galeria8.jpg",
   },
-]
-
-const cmsData = {
-  "Cromo brillo": {
-    "modelo1": "/content/images/lineaProducto/modelo1-cromo.png",
-    "modelo2": "/content/images/lineaProducto/modelo2-cromo.png",
-    "modelo3": "/content/images/lineaProducto/modelo3-cromo.png"
-  },
-  "Negro mate": {
-    "modelo1": "/content/images/lineaProducto/modelo1-negro.png",
-    "modelo2": "/content/images/lineaProducto/modelo2-negro.png",
-    "modelo3": "/content/images/lineaProducto/modelo3-negro.png"
-  }
-}
+];
 
 let selectedOption = document.querySelector('.bordeColor[data-selected="true"]');
 
@@ -67,9 +68,9 @@ colorOptions.forEach(option => {
 
     modelColorIcons.forEach(icon => {
       if (newColorName === 'Cromo brillo') {
-        icon.src = '/content/images/lineaProducto/cromoEjemplo.png';
+        icon.src = '/content/images/lineaProducto/opcionColor1.png';
       } else if (newColorName === 'Negro mate') {
-        icon.src = '/content/images/lineaProducto/negroEjemplo.png';
+        icon.src = '/content/images/lineaProducto/opcionColor2.png';
       }
     });
 
