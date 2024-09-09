@@ -19,7 +19,6 @@ const cmsData = {
   }
 }
 
-
 const slides = [
   {
     img: "galeria1.jpg",
@@ -46,6 +45,29 @@ const slides = [
     img: "galeria8.jpg",
   },
 ];
+
+// Header
+window.addEventListener('scroll', function () {
+  const header = document.getElementById('header');
+  const openNav = document.getElementById('openNav');
+  const logoNobili = document.getElementById('logoNobili');
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  if (scrollPosition > 10) {
+    header.style.position = 'sticky';
+  } else {
+    header.style.position = 'absolute';
+  }
+
+  if (scrollPosition > 500) {
+    header.style.backgroundColor = '#FFF';
+    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-negro.webp')";
+    openNav.style.backgroundImage = "url('/content/images/header-footer/Hamburger-Black.svg')"
+  } else {
+    header.style.backgroundColor = 'transparent';
+    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-blanco.webp')";
+    openNav.style.backgroundImage = "url('/content/images/header-footer/Hamburger-White.svg')"
+  }
+})
 
 let selectedOption = document.querySelector('.bordeColor[data-selected="true"]');
 

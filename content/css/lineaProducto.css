@@ -1,3 +1,18 @@
+header {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+#logoNobili {
+  background-image: url("/content/images/header-footer/logo-nobili-blanco.webp");
+}
+
+#openNav {
+  background-image: url("/content/images/header-footer/Hamburger-White.svg");
+}
+
 main {
   box-sizing: border-box;
 }
@@ -174,6 +189,11 @@ main {
   background-repeat: no-repeat;
 }
 
+.todosModelos,
+.verModelos {
+  transition: all 0.5s;
+}
+
 /* Swiper */
 .swiper {
   width: 100%;
@@ -247,7 +267,7 @@ main {
     height: 100%;
   }
 
-  .swiper-slide img  {
+  .swiper-slide img {
     height: 300px;
   }
 }
@@ -258,7 +278,7 @@ main {
     height: 35rem;
     padding: 3.125rem 3.75rem;
   }
-  
+
   .heroLineaProducto h1 {
     font-size: 1.5rem;
   }
@@ -276,7 +296,8 @@ main {
     font-size: 0.875rem;
   }
 
-  .imagenProducto, .caracteristica img {
+  .imagenProducto,
+  .caracteristica img {
     max-width: 660px;
   }
 
@@ -309,18 +330,44 @@ main {
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
+
   /* Hero */
-  
   .heroLineaProducto {
     justify-content: space-between;
-    padding: 3.125rem 5.625rem;
+    padding: 6rem 5.625rem 3.125rem 5.625rem;
   }
 
   .heroLineaProducto a {
+    position: relative;
     font-size: 0.75rem;
     line-height: 11.48px;
+    transition: all 0.3s ease;
   }
-  
+
+  .heroLineaProducto a::after {
+    content: "";
+    width: 1rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    transform: translateY(-50%) rotateY(180deg);
+    background-image: url("/content/images/lineaProducto/Icon-Flecha.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+  }
+
+  .heroLineaProducto a:hover {
+    margin-left: 1.75rem;
+  }
+
+  .heroLineaProducto a:hover::after {
+    opacity: 1;
+    left: -1.75rem;
+  }
+
   .heroLineaProducto h1 {
     font-size: 1.875rem;
     line-height: 28.71px;
@@ -342,7 +389,8 @@ main {
     font-size: 1rem;
   }
 
-  .imagenProducto, .caracteristica img {
+  .imagenProducto,
+  .caracteristica img {
     max-width: 760px;
   }
 
@@ -355,7 +403,8 @@ main {
     width: 28.3%;
   }
 
-  .detalle p:first-child, .detalle p {
+  .detalle p:first-child,
+  .detalle p {
     font-size: 0.875rem;
     line-height: 13.4px;
   }
@@ -365,9 +414,10 @@ main {
     line-height: 11.48px;
   }
 
-  .todosModelos, .verModelos {
+  .todosModelos,
+  .verModelos {
     font-size: 0.75rem;
-    line-height: 11.48px ;
+    line-height: 11.48px;
   }
 
   /* Caracteristicas */
@@ -393,6 +443,7 @@ main {
 }
 
 @media only screen and (min-width: 1650px) {
+
   /* Hero */
   .heroLineaProducto a {
     font-size: 0.875rem;
@@ -408,16 +459,18 @@ main {
 
   /* Modelos */
 
-  .modelos>p:first-of-type, .caracteristica p {
+  .modelos>p:first-of-type,
+  .caracteristica p {
     font-size: 1.125rem;
     line-height: 20px;
   }
-  
+
   .modelo {
     width: 21%;
   }
 
-  .detalle p:first-child, .detalle p {
+  .detalle p:first-child,
+  .detalle p {
     font-size: 1rem;
     line-height: 18px;
   }
@@ -427,7 +480,8 @@ main {
     line-height: 16px;
   }
 
-  .todosModelos, .verModelos {
+  .todosModelos,
+  .verModelos {
     font-size: 0.875rem;
     line-height: 16px;
   }
