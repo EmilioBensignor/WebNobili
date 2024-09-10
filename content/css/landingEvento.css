@@ -16,7 +16,8 @@ main {
   width: 100%;
   height: 1.25rem;
   position: relative;
-  background-image: url("/content/images/landingEvento/bg-dorado-small.jpg");
+  /* background-image: url("/content/images/landingEvento/bg-dorado-small.jpg"); */
+  background: linear-gradient(90deg, rgba(247,153,80,1) 0%, rgba(190,122,18,1) 100%);
   z-index: 1;
 }
 
@@ -433,7 +434,9 @@ footer p span {
   }
 
   .noTePierdas {
-    padding: 7.5rem 2.5rem 0 2.5rem;
+    justify-content: end;
+    gap: 15%;
+    padding: 0 2.5rem;
   }
 
   .datosEvento {
@@ -466,9 +469,20 @@ footer p span {
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .noTePierdas {
+    gap: 25%;
+  }
+  .noTePierdasIntro {
+    font-size: 1.75rem;
+    line-height: 30px;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   .lineaDorada {
-    background-image: url("/content/images/landingEvento/bg-dorado.jpg");
+    /* background-image: url("/content/images/landingEvento/bg-dorado.jpg"); */
+    background-color: #F79950;
   }
 
   /* Header */
@@ -553,10 +567,11 @@ footer p span {
   /* Video - No te pierdas */
 
   .noTePierdas {
-    gap: 3.5rem;
+    width: 50%;
   }
 
   .noTePierdasIntro {
+    max-width: 395px;
     font-size: 2.25rem;
     line-height: 34px;
   }
@@ -587,6 +602,26 @@ footer p span {
   .direccion p {
     font-size: 1.25rem;
     line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .videoNoPierdas {
+    max-height: 790px;
+  }
+
+  .noTePierdas {
+    justify-content: center;
+    gap: 15%;
+  }
+
+  .datosEvento {
+    border-radius: 18px;
+    margin-bottom: 0;
+  }
+
+  .datosEvento::before {
+    border-radius: 18px;
   }
 }
 
