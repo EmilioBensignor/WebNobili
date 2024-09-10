@@ -81,6 +81,12 @@ body {
   background-position: center;
 }
 
+.bgCover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .text-center {
   text-align: center;
 }
