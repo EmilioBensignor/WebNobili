@@ -1,7 +1,7 @@
 /* Header Home */
 
 header {
-  background-color: #4A3929;
+  background-color: rgba(26, 28, 29, 0.4) !important;
 }
 
 .logoNobili {
@@ -35,7 +35,16 @@ h2 {
 /* Hero */
 
 .heroBg {
-  background-color: #6A4C30;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero{
+  position: relative;
+  z-index: 1;
 }
 
 .content p {
@@ -65,15 +74,31 @@ h2 {
 /* Sections */
 
 .section1 {
-  background-color: #252525;
+  background-image: url("/content/images/home/sole_banner.jpg");
+  background-position: right -250px center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section2 {
-  background-color: #798D7F;
+  background-image: url("/content/images/home/respiro_banner.jpg");
+  background-position: right -300px center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section3 {
-  background-color: #1A1A1A;
+  background-color: #000000;
+  padding: 3rem 0 !important;
+}
+
+.imgTecnologiaAbsoluta{
+  width: 90vw;
+  height: 30vh;
+  background-image: url("/content/images/home/widd2020_home.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @keyframes elasticus {
@@ -112,6 +137,18 @@ h2 {
   .masInfo p {
     font-size: 0.625rem;
   }
+
+  .section1{
+    background-position: right -230px center;
+  }
+
+  .section2{
+    background-position: right -190px center;
+  }
+
+  .imgTecnologiaAbsoluta{
+    height: 40vh;
+  }
 }
 
 @media only screen and (min-width: 580px) {
@@ -119,6 +156,16 @@ h2 {
   h1,
   h2 {
     font-size: 1.75rem;
+  }
+
+  .section1 {
+    background-position: right -160px center;
+  }
+}
+
+@media only screen and (min-width: 630px){
+  .section2 {
+    background-position: right -150px center;
   }
 }
 
@@ -144,6 +191,19 @@ h2 {
   .masInfo p {
     font-size: 0.625rem;
   }
+
+  .section1 {
+    background-position: center;
+  }
+
+  .section2 {
+    background-position: center;
+  }
+
+  .imgTecnologiaAbsoluta {
+    width: 82vw;
+    height: 45vh;
+  }
 }
 
 @media only screen and (min-width: 770px) {
@@ -158,6 +218,16 @@ h2 {
 
   .masInfo p {
     font-size: 0.75rem;
+  }
+
+  .imgTecnologiaAbsoluta {
+    width: 84vw;
+  }
+}
+
+@media only screen and (min-width: 840px){
+  .imgTecnologiaAbsoluta {
+    width: 86vw;
   }
 }
 
@@ -174,7 +244,7 @@ h2 {
   /* Generales */
 
   .reversed {
-    max-width: 500px;
+    max-width: 600px;
     align-self: flex-end;
   }
 
@@ -246,6 +316,20 @@ h2 {
     background: #fff;
     content: "";
   }
+
+  .section1 {
+    background-image: url("/content/images/home/sole_banner_reversed.jpg");
+  }
+
+  .section3{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imgTecnologiaAbsoluta{
+    width: 50vw;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -290,4 +374,5 @@ h2 {
   .reversed {
     max-width: 950px;
   }
+
 }

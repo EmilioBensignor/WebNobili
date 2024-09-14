@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
   background-color: transparent;
   transition: all 0.3s;
@@ -517,4 +518,525 @@ main {
   .caracteristica {
     max-width: 1180px;
   }
+=======
+header {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+#logoNobili {
+  background-image: url("/content/images/header-footer/logo-nobili-blanco.webp");
+}
+
+#openNav {
+  background-image: url("/content/images/header-footer/Hamburger-White.svg");
+}
+
+main {
+  box-sizing: border-box;
+}
+
+/* Hero */
+
+.heroLineaProducto {
+  height: 30rem;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  background-color: #798D7F;
+  color: white;
+  padding: 1rem 1rem 1.875rem 1rem;
+}
+
+.heroLineaProducto a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 500;
+  line-height: 9.57px;
+}
+
+.heroLineaProducto h1 {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 0.625rem;
+}
+
+.heroLineaProducto p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 17.23px;
+}
+
+/* Modelos */
+
+.modelos {
+  gap: 3.5rem;
+  padding: 3.5rem 1rem;
+}
+
+.modelos>p:first-of-type {
+  font-size: 1.125rem;
+  line-height: 18px;
+}
+
+/* Colores */
+.containerProductos {
+  width: 100%;
+  text-align: center;
+}
+
+.imagenProducto {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.opcionesColores {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.bordeColor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.5px solid transparent;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circuloColor {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.bordeColor[data-selected="true"] {
+  border-color: #1a1a1a;
+}
+
+#colorName {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(5px);
+}
+
+#colorName.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Opciones Modelos */
+
+.opcionesModelos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modelo {
+  width: 45%;
+  gap: 1.25rem;
+}
+
+.modelo>img {
+  width: 5.4rem;
+}
+
+.detalle p:first-child {
+  color: var(--color-black);
+  margin-bottom: 0.625rem;
+}
+
+.detalle p {
+  color: #1A1A1A66;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 11.48px;
+  margin-bottom: 0.875rem;
+}
+
+.detalleColor {
+  gap: 0.625rem;
+}
+
+.detalleColor img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.detalle .detalleColor p {
+  color: var(--color-black);
+  font-size: 0.625rem;
+  line-height: 9.57px;
+  margin-bottom: 0;
+}
+
+.todosModelos {
+  position: relative;
+  background-color: var(--color-black);
+  border: none;
+  color: var(--color-white);
+  font-size: 0.625rem;
+  font-family: 'Gotham Pro', sans-serif;
+  line-height: 9.57px;
+  cursor: pointer;
+  padding: 1rem 2.375rem 1rem 0.75rem;
+}
+
+.todosModelos::after {
+  content: "";
+  width: 1rem;
+  height: 0.75rem;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background-image: url("/content/images/lineaProducto/Icon-Flecha.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.todosModelos,
+.verModelos {
+  transition: all 0.5s;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 225px;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.swiper-slide img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-slide {
+  padding-bottom: 3.5rem;
+}
+
+/* Caracteristicas */
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caracteristica h2 {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-black);
+  line-height: 18px;
+  margin-bottom: 1.25rem;
+}
+
+.caracteristica p {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+
+.caracteristica img {
+  width: 100%;
+  margin-bottom: 3.125rem;
+}
+
+.grifosNobili {
+  width: 100%;
+}
+
+.verModelos {
+  background-color: var(--color-black);
+  border: none;
+  color: var(--color-white);
+  font-size: 0.625rem;
+  font-family: 'Gotham Pro', sans-serif;
+  line-height: 9.57px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .opcionesModelos {
+    gap: 1.5rem;
+  }
+
+  .swiper {
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    height: 300px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 660px) {
+  .heroLineaProducto {
+    height: 35rem;
+    padding: 3.125rem 3.75rem;
+  }
+
+  .heroLineaProducto h1 {
+    font-size: 1.5rem;
+  }
+
+  .heroLineaProducto p {
+    font-size: 1.25rem;
+    line-height: 19px;
+  }
+
+  .modelos {
+    padding: 3.5rem 3.75rem;
+  }
+
+  .modelos>p:first-of-type {
+    font-size: 0.875rem;
+  }
+
+  .imagenProducto,
+  .caracteristica img {
+    max-width: 660px;
+  }
+
+  .opcionesModelos {
+    gap: 2rem;
+  }
+
+  .modelo>img {
+    width: 9.375rem;
+  }
+
+  .swiper-slide img {
+    height: 400px;
+  }
+
+  .caracteristica h2 {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .opcionesModelos {
+    gap: 3rem;
+  }
+
+  .caracteristica {
+    max-width: 644px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+
+  /* Hero */
+  .heroLineaProducto {
+    justify-content: space-between;
+    padding: 6rem 5.625rem 3.125rem 5.625rem;
+  }
+
+  .heroLineaProducto a {
+    position: relative;
+    font-size: 0.75rem;
+    line-height: 11.48px;
+    transition: all 0.3s ease;
+  }
+
+  .heroLineaProducto a::after {
+    content: "";
+    width: 1rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    transform: translateY(-50%) rotateY(180deg);
+    background-image: url("/content/images/lineaProducto/Icon-Flecha.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+  }
+
+  .heroLineaProducto a:hover {
+    margin-left: 1.75rem;
+  }
+
+  .heroLineaProducto a:hover::after {
+    opacity: 1;
+    left: -1.75rem;
+  }
+
+  .heroLineaProducto h1 {
+    font-size: 1.875rem;
+    line-height: 28.71px;
+    margin-bottom: 1.25rem;
+  }
+
+  .heroLineaProducto p {
+    font-size: 1.375rem;
+    line-height: 21.05px;
+  }
+
+  /* Modelos */
+  .modelos {
+    gap: 6.25rem;
+    padding: 6.25rem 5.625rem;
+  }
+
+  .modelos>p:first-of-type {
+    font-size: 1rem;
+  }
+
+  .imagenProducto,
+  .caracteristica img {
+    max-width: 760px;
+  }
+
+  /* Opciones Modelos */
+  .opcionesModelos {
+    gap: 4.125rem;
+  }
+
+  .modelo {
+    width: 28.3%;
+  }
+
+  .detalle p:first-child,
+  .detalle p {
+    font-size: 0.875rem;
+    line-height: 13.4px;
+  }
+
+  .detalle .detalleColor p {
+    font-size: 0.75rem;
+    line-height: 11.48px;
+  }
+
+  .todosModelos,
+  .verModelos {
+    font-size: 0.75rem;
+    line-height: 11.48px;
+  }
+
+  /* Caracteristicas */
+  .caracteristica {
+    max-width: 670px;
+  }
+
+  .caracteristica p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .caracteristica {
+    max-width: 760px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .caracteristica {
+    max-width: 884px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+
+  /* Hero */
+  .heroLineaProducto a {
+    font-size: 0.875rem;
+  }
+
+  .heroLineaProducto h1 {
+    font-size: 2.125rem;
+  }
+
+  .heroLineaProducto p {
+    font-size: 1.5rem;
+  }
+
+  /* Modelos */
+
+  .modelos>p:first-of-type,
+  .caracteristica p {
+    font-size: 1.125rem;
+    line-height: 20px;
+  }
+
+  .modelo {
+    width: 21%;
+  }
+
+  .detalle p:first-child,
+  .detalle p {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+
+  .detalle .detalleColor p {
+    font-size: 0.875rem;
+    line-height: 16px;
+  }
+
+  .todosModelos,
+  .verModelos {
+    font-size: 0.875rem;
+    line-height: 16px;
+  }
+
+  /* Swiper */
+
+  .swiper-slide img {
+    height: 500px;
+  }
+
+  /* Caracteristica */
+
+  .caracteristica {
+    max-width: 1014px;
+  }
+
+  .caracteristica h2 {
+    font-size: 1.25rem;
+    line-height: 22px;
+    margin-bottom: 1.625rem;
+  }
+
+  .verModelos {
+    margin-top: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .caracteristica {
+    max-width: 1106px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .caracteristica {
+    max-width: 1180px;
+  }
+>>>>>>> c59e6d94ee9796cab9ce21c27f47ffe4fcb1d9f1
 }

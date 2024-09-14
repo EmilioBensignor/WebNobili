@@ -36,6 +36,18 @@ const redes = [
   },
 ];
 
+// Header
+window.addEventListener('scroll', function () {
+  const header = document.getElementById('header');
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition > 0) {
+    header.style.position = 'sticky';
+  } else {
+    header.style.position = 'absolute';
+  }
+})
+
 // Nav
 const navLinks = document.querySelectorAll('.navLink');
 
