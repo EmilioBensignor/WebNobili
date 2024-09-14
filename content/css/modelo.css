@@ -1,0 +1,346 @@
+main {
+  background-color: white;
+  padding: 2.5rem 1rem;
+}
+
+.grifoMuestra {
+  display: none;
+}
+
+/* Muestra Grifo */
+
+.muestraInfo {
+  gap: 3.5rem;
+}
+
+.headMuestra {
+  gap: 0.375rem;
+}
+
+.headMuestra p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.headMuestra h1 {
+  font-size: 1.375rem;
+}
+
+/* Acabado */
+
+.acabado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  padding-top: 0.625rem;
+}
+
+.acabado .nombre {
+  gap: 0.2rem;
+}
+
+.acabado .nombre p:first-of-type {
+  font-weight: 500;
+}
+
+.acabado .nombre p {
+  font-size: 0.75rem;
+}
+
+.opcionesColores {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.bordeColor {
+  width: 1.625rem;
+  height: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.5px solid transparent;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circuloColor {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.bordeColor[data-selected="true"] {
+  border-color: #1a1a1a;
+}
+
+/* Accordions */
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #EEEEEE;
+  outline: none;
+  cursor: pointer;
+  padding: 0.75rem 0;
+}
+
+.accordion span {
+  font-size: 1.25rem;
+}
+
+.accordion p {
+  text-align: start;
+  font-size: 0.75rem;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 900;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0;
+}
+
+.panel.open {
+  max-height: 1000px;
+  padding: 0.75rem 0 2rem 0;
+}
+
+.panel .listPanel {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.listPanel li {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: list-item;
+  list-style-type: inherit;
+}
+
+.panelWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.panelWrap div {
+  gap: 0.75rem;
+}
+
+.panelWrap p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.descargar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 0.75rem 0;
+}
+
+.descargar div:last-of-type {
+  border: none;
+}
+
+.descargar div p {
+  font-size: 0.75rem;
+}
+
+.descargar div .iconDescargar {
+  width: 0.75rem;
+  height: 0.688rem;
+  background-image: url("/content/images/modelo/Icon-Descargar.png");
+}
+
+.dondeComprar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.dondeComprar a {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.dondeComprar .iconDonde {
+  width: 0.563rem;
+  height: 0.813rem;
+  background-image: url("/content/images/modelo/Icon-Donde.png");
+}
+
+@media only screen and (min-width: 660px) {
+  .grifoMuestraMobile {
+    display: none;
+  }
+
+  .grifoMuestra {
+    display: block;
+  }
+
+  main {
+    padding: 2.5rem 3.75rem;
+  }
+
+  .modelo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  .grifoMuestra img {
+    width: 100%;
+  }
+
+  .muestraInfo {
+    gap: 1.5rem;
+  }
+
+  .headMuestra {
+    margin-bottom: 1.5rem;
+  }
+
+  .headMuestra p {
+    font-size: 0.875rem;
+  }
+
+  .headMuestra h1 {
+    font-size: 1.75rem;
+  }
+
+  .acabado {
+    padding-top: 1rem;
+  }
+
+  .acabado .nombre {
+    gap: 0.375rem;
+  }
+
+  .acabado .nombre p {
+    font-size: 0.875rem;
+  }
+
+  .accordion {
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .accordion p {
+    font-size: 0.875rem;
+  }
+
+  .listPanel li {
+    line-height: 1.2rem;
+  }
+
+  .listPanel li,
+  .panelWrap p,
+  .descargar div p,
+  .dondeComprar a {
+    font-size: 0.875rem;
+  }
+
+  .descargar div .iconDescargar {
+    width: 0.875rem;
+    height: 0.802rem;
+  }
+
+  .dondeComprar {
+    padding: 1.25rem 0;
+  }
+
+  .dondeComprar .iconDonde {
+    width: 0.723rem;
+    height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  main {
+    padding: 2.5rem 5.625rem;
+  }
+
+  .modelo {
+    gap: 1.5rem;
+  }
+
+  .grifoMuestra {
+    width: 50%;
+  }
+
+  .headMuestra h1 {
+    font-size: 2.125rem;
+  }
+
+  .acabado .nombre p {
+    font-size: 1rem;
+  }
+
+  .accordion {
+    pointer-events: none;
+    padding: 1.25rem 0;
+  }
+
+  .accordion p {
+    font-size: 1rem;
+  }
+
+  .accordion span {
+    display: none;
+  }
+
+  .panel {
+    max-height: 1000px;
+    padding: 0.75rem 0 2rem 0;
+  }
+
+  .listPanel li,
+  .panelWrap p,
+  .descargar div p,
+  .dondeComprar a {
+    font-size: 1rem;
+  }
+
+  .panelWrap {
+    gap: 1.25rem;
+  }
+
+  .panelWrap>div {
+    width: 45%;
+  }
+
+  .descargar div {
+    padding: 1rem 0;
+  }
+
+  .descargar div .iconDescargar {
+    width: 1rem;
+    height: 0.917rem;
+  }
+
+  .dondeComprar .iconDonde {
+    width: 0.779rem;
+    height: 1.125rem;
+  }
+}
