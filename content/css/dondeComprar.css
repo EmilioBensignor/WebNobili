@@ -66,14 +66,75 @@
 }
 
 .listPanel li {
-  font-size: 0.75rem;
   line-height: 1rem;
   display: list-item;
   list-style-type: inherit;
 }
 
+.listPanel li a {
+  font-size: 0.75rem;
+  color: var(--color-black);
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 660px) {
   .dondeComprar {
+    gap: 1.5rem;
     padding: 7.688rem 3.75rem 2.5rem 3.75rem;
+  }
+
+  .dondeComprar h1 {
+    font-size: 1.375rem;
+  }
+
+  .accordion {
+    padding: 1rem 0;
+  }
+
+  .accordion p,
+  .panel p,
+  .listPanel li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .dondeComprar {
+    padding: 8.125rem 5.625rem 2.5rem 5.625rem;
+  }
+
+  .dondeComprar h1 {
+    font-size: 1.5rem;
+  }
+
+  .dondeComprar .iconDonde {
+    width: 1.063rem;
+    height: 1.5rem;
+  }
+
+  .accordionsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2rem;
+  }
+
+  .accordionsContainer>div {
+    width: 48%;
+  }
+
+  .accordion {
+    padding: 1rem 0;
+  }
+
+  .listPanel li {
+    line-height: 1.4rem;
+  }
+
+  .accordion p,
+  .panel p,
+  .listPanel li a {
+    font-size: 1rem;
   }
 }
