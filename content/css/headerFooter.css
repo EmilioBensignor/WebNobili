@@ -6,7 +6,7 @@ header {
   z-index: 1;
   top: 0;
   background-color: white;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease, position 0.3s ease;
 }
 
 .hamburger {

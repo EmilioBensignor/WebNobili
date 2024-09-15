@@ -1,6 +1,6 @@
 main {
   background-color: white;
-  padding: 2.5rem 1rem;
+  padding: 5.875rem 1rem 2.5rem 1rem;
 }
 
 .grifoMuestra {
@@ -105,6 +105,7 @@ main {
   font-size: 0.75rem;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 900;
+  line-height: 1.2rem;
 }
 
 .panel {
@@ -166,7 +167,7 @@ main {
 .descargar div .iconDescargar {
   width: 0.75rem;
   height: 0.688rem;
-  background-image: url("/content/images/modelo/Icon-Descargar.png");
+  background-image: url("/content/images/modelo/Icon-Descargar.svg");
 }
 
 .dondeComprar {
@@ -186,7 +187,7 @@ main {
 .dondeComprar .iconDonde {
   width: 0.563rem;
   height: 0.813rem;
-  background-image: url("/content/images/modelo/Icon-Donde.png");
+  background-image: url("/content/images/modelo/Icon-Donde.svg");
 }
 
 @media only screen and (min-width: 660px) {
@@ -199,7 +200,7 @@ main {
   }
 
   main {
-    padding: 2.5rem 3.75rem;
+    padding: 7.688rem 3.75rem 2.5rem 3.75rem;
   }
 
   .modelo {
@@ -278,7 +279,7 @@ main {
 
 @media only screen and (min-width: 1080px) {
   main {
-    padding: 2.5rem 5.625rem;
+    padding: 8.125rem 5.625rem 2.5rem 5.625rem;
   }
 
   .modelo {

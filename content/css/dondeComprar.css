@@ -1,0 +1,79 @@
+.dondeComprar {
+  gap: 1.25rem;
+  background-color: white;
+  padding: 5.875rem 1rem 2.5rem 1rem;
+}
+
+.dondeComprar h1 {
+  font-size: 1.25rem;
+}
+
+.dondeComprar .iconDonde {
+  width: 0.938rem;
+  height: 1.313rem;
+  background-image: url("/content/images/modelo/Icon-Donde.svg");
+  margin-left: 0.625rem;
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+
+.accordion p {
+  font-size: 0.75rem;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 900;
+}
+
+.accordion span {
+  font-size: 1.25rem;
+}
+
+.panel {
+  max-height: 0;
+  gap: 1.25rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0;
+}
+
+.panel.open {
+  max-height: 1000px;
+  padding: 0.75rem 0 2rem 0;
+}
+
+.panelContent {
+  gap: 0.5rem;
+}
+
+.panel p {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.panel .listPanel {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.listPanel li {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: list-item;
+  list-style-type: inherit;
+}
+
+@media only screen and (min-width: 660px) {
+  .dondeComprar {
+    padding: 7.688rem 3.75rem 2.5rem 3.75rem;
+  }
+}
