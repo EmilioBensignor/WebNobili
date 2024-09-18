@@ -61,12 +61,12 @@
 
 .panel .listPanel {
   list-style-type: disc;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   margin: 0;
 }
 
 .listPanel li {
-  line-height: 1rem;
+  line-height: 1.75rem;
   display: list-item;
   list-style-type: inherit;
 }
@@ -89,6 +89,10 @@
 
   .accordion {
     padding: 1rem 0;
+  }
+
+  .listPanel li {
+    line-height: 2rem;
   }
 
   .accordion p,
@@ -126,10 +130,6 @@
 
   .accordion {
     padding: 1rem 0;
-  }
-
-  .listPanel li {
-    line-height: 1.4rem;
   }
 
   .accordion p,
