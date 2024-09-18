@@ -168,6 +168,7 @@ main {
   width: 0.75rem;
   height: 0.688rem;
   background-image: url("/content/images/modelo/Icon-Descargar.svg");
+  cursor: pointer;
 }
 
 .dondeComprar {
@@ -188,6 +189,12 @@ main {
   width: 0.563rem;
   height: 0.813rem;
   background-image: url("/content/images/modelo/Icon-Donde.svg");
+}
+
+@media only screen and (min-width: 480px) {
+  .grifoMuestraMobile {
+    max-width: 430px;
+  }
 }
 
 @media only screen and (min-width: 660px) {
@@ -277,17 +284,25 @@ main {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .grifoMuestra {
+    width: 40%;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   main {
     padding: 8.125rem 5.625rem 2.5rem 5.625rem;
   }
 
   .modelo {
+    justify-content: flex-start;
     gap: 1.5rem;
   }
 
   .grifoMuestra {
     width: 50%;
+    max-width: 430px;
   }
 
   .headMuestra h1 {
@@ -343,5 +358,62 @@ main {
   .dondeComprar .iconDonde {
     width: 0.779rem;
     height: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .grifoMuestra {
+    width: 60%;
+    max-width: 500px;
+  }
+
+  .muestraInfo {
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .acabado,
+  .headMuestra,
+  .accordion,
+  .panel,
+  .dondeComprar,
+  .accordionsContainer>div {
+    max-width: 500px;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .accordionsContainer {
+    justify-content: space-between;
+  }
+
+  .accordionsContainer>div {
+    width: 100%;
+  }
+
+  .dondeComprar {
+    align-items: flex-start;
+  }
+
+  .accordionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .panelWrap {
+    justify-content: space-between;
+  }
+
+  .panelWrap>div {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .modelo {
+    gap: 5rem;
   }
 }
