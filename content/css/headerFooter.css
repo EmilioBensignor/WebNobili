@@ -6,7 +6,22 @@ header {
   z-index: 1;
   top: 0;
   background-color: white;
-  transition: background-color 0.3s ease, position 0.3s ease;
+  transition: position 0.3s ease, transform 0.3s ease;
+  animation: adjust-header linear both;
+  animation-timeline: scroll();
+  animation-range: 0 1px;
+}
+
+@keyframes adjust-header {
+  from {
+    position: absolute;
+    transform: translateY(0);
+  }
+
+  to {
+    position: fixed;
+    transform: translateY(0);
+  }
 }
 
 .hamburger {
