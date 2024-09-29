@@ -25,6 +25,11 @@ h2 {
   font-weight: normal;
 }
 
+.nobili {
+  position: sticky;
+  top: 0;
+}
+
 .content {
   position: relative;
   z-index: 10;
