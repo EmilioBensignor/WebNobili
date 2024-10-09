@@ -6,6 +6,7 @@ header {
   z-index: 1;
   top: 0;
   background-color: white;
+  padding: 1rem;
   transition: position 0.3s ease, transform 0.3s ease;
   animation: adjust-header linear both;
   animation-timeline: scroll();
@@ -36,7 +37,7 @@ header {
 .logoNobili {
   width: 4rem;
   height: 1.438rem;
-  background-image: url("/content/images/header-footer/logo-nobili-negro.webp");
+  background-image: url("/content/images/header-footer/logo-nobili-negro.svg");
 }
 
 /* Nav */
@@ -143,6 +144,7 @@ footer .footerTop img {
   gap: 0.625rem;
 }
 
+.logosFooter p,
 .footerMenu li a {
   text-decoration: none;
   color: #b3b3b3;
@@ -156,53 +158,8 @@ footer .footerTop img {
   text-decoration: underline;
 }
 
-.accordionItem {
-  border-top: 1px solid #FFFFFF80;
-  border-bottom: 1px solid #FFFFFF80;
-  padding: 1rem;
-}
-
-.accordionHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.accordionHeader p,
-.accordionContent p {
-  font-size: 0.625rem;
-  color: #b3b3b3;
-  font-weight: 500;
-}
-
-.accordionIcon {
-  font-size: 1.5rem;
-  transform: rotate(0deg);
-  transition: transform 0.3s ease;
-}
-
-.accordionContent {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.accordionContent p {
-  line-height: 18px;
-}
-
-.accordionItem.open .accordionContent {
-  max-height: 300px;
-  padding: 1rem 0;
-}
-
-.accordionItem.open .accordionIcon {
-  transform: rotate(45deg);
-}
-
 .footerRedesContainer {
-  padding: 3.75rem 1rem;
+  padding: 1.5rem 1rem 3.75rem 1rem;
 }
 
 .redesFooter {
@@ -231,16 +188,12 @@ footer .footerTop img {
   background-image: url("/content/images/header-footer/Youtube-Icon.svg");
 }
 
-.linkedInIcon {
-  background-image: url("/content/images/header-footer/LinkedIn-Icon.svg");
-}
-
 /* Tablet */
 @media only screen and (min-width: 660px) {
 
   /* Header */
   .header {
-    padding: 1.5rem 3.75rem;
+    padding: 0.75rem 3.75rem;
   }
 
   .logoNobili {
@@ -264,16 +217,11 @@ footer .footerTop img {
   }
 
   .logosFooter {
-    flex-direction: row;
     gap: 1rem;
   }
 
-  .accordionItem {
-    padding: 1rem 3.75rem;
-  }
-
   .footerRedesContainer {
-    padding: 3.75rem;
+    padding: 1.5rem 3.75rem 3.75rem 3.75rem;
   }
 }
 
@@ -286,9 +234,7 @@ footer .footerTop img {
     font-size: 1rem;
   }
 
-  .footerMenu li a,
-  .accordionHeader p,
-  .accordionContent p {
+  .logosFooter p, .footerMenu li a{
     font-size: 0.75rem;
   }
 }
@@ -308,7 +254,7 @@ footer .footerTop img {
   /* Header */
 
   .header {
-    padding: 1.5rem 5.625rem;
+    padding: 1rem 5.625rem;
   }
 
   .hamburger {
@@ -327,12 +273,12 @@ footer .footerTop img {
 
   footer .footerTop {
     align-items: center;
-    gap: 1.25rem;
+    gap: 2.5rem;
     padding: 2.5rem 0;
   }
 
   .logosFooter {
-    gap: 2rem;
+    align-items: center;
   }
 
   .footerMenu {
@@ -340,29 +286,7 @@ footer .footerTop img {
     gap: 3.75rem;
   }
 
-  .footerMenu li a {
-    font-size: 0.75rem;
-  }
-
-  .accordionItem {
-    display: flex;
-    justify-content: center;
-    border: none;
-    padding: 1.25rem 3.75rem 0 3.75rem;
-  }
-
-  .accordionHeader {
-    display: none;
-  }
-
-  .accordionContent {
-    max-width: 800px;
-    max-height: 100%;
-    text-align: center;
-    line-height: 18px;
-  }
-
-  .accordionContent p {
+  .logosFooter p, .footerMenu li a {
     font-size: 0.75rem;
   }
 
@@ -393,9 +317,7 @@ footer .footerTop img {
 
 @media only screen and (min-width: 1650px) {
 
-  .footerMenu li a,
-  .accordionHeader p,
-  .accordionContent p {
+  .logosFooter p, .footerMenu li a{
     font-size: 0.875rem;
   }
 }

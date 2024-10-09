@@ -6,35 +6,32 @@ const redesFooter = document.getElementById("redesFooter");
 const menuFooter = [
   {
     title: "INICIO",
-    link: "#",
+    link: "/",
   },
   {
     title: "PRODUCTOS",
-    link: "#",
+    link: "/productos.html",
+  },
+  {
+    title: "CATÁLOGO",
+    link: "https://www.flipsnack.com/9ABE9FAF8D6/cat-logo-nobili/full-view.html",
+    target: true,
   },
 ];
-const redes = [
-  {
-    img: "facebookIcon",
-    link: "https://www.facebook.com/NobiliMadeinItaly"
-  },
-  {
-    img: "instagramIcon",
-    link: "https://www.instagram.com/nobili_madeinitaly/",
-  },
-  {
-    img: "pinterestIcon",
-    link: "https://it.pinterest.com/nobili_madeinitaly/",
-  },
-  {
-    img: "youtubeIcon",
-    link: "https://www.youtube.com/@nobili_madeinitaly",
-  },
-  {
-    img: "linkedInIcon",
-    link: "https://www.linkedin.com/company/nobilimadeinitaly/",
-  },
-];
+// const redes = [
+//   {
+//     img: "facebookIcon",
+//     link: "https://www.facebook.com/profile.php?id=61562442500851"
+//   },
+//   {
+//     img: "instagramIcon",
+//     link: "https://www.instagram.com/nobili.arg/",
+//   },
+//   {
+//     img: "youtubeIcon",
+//     link: "https://www.youtube.com/channel/UCFaxmYTW5X3tdMGe722Xj-w",
+//   },
+// ];
 
 // Nav
 const navLinks = document.querySelectorAll('.navLink');
@@ -68,28 +65,24 @@ document.getElementById('closeNav').addEventListener('click', function () {
 
 // Footer
 for (let footerMenuItem = 0; footerMenuItem < menuFooter.length; footerMenuItem++) {
-  footerMenu.innerHTML += `
-    <li>
-      <a href="${menuFooter[footerMenuItem].link}">${menuFooter[footerMenuItem].title}</a>
-    </li>
-  `;
-}
-
-function toggleAccordion(element) {
-  const item = element.parentElement;
-  const content = item.querySelector('.accordionContent');
-  item.classList.toggle('open');
-
-  if (item.classList.contains('open')) {
-    content.style.maxHeight = content.scrollHeight + 'px';
+  if (menuFooter[footerMenuItem].target) {
+    footerMenu.innerHTML += `
+      <li>
+        <a href="${menuFooter[footerMenuItem].link}" target="_blank">${menuFooter[footerMenuItem].title}</a>
+      </li>
+    `;
   } else {
-    content.style.maxHeight = null;
+    footerMenu.innerHTML += `
+      <li>
+        <a href="${menuFooter[footerMenuItem].link}">${menuFooter[footerMenuItem].title}</a>
+      </li>
+    `;
   }
+
 }
 
-
-for (let redFooter = 0; redFooter < redes.length; redFooter++) {
-  redesFooter.innerHTML += `
-    <a class="${redes[redFooter].img} iconRed bgContain" href="${redes[redFooter].link}" target="_blank"></a>
-  `;
-}
+// for (let redFooter = 0; redFooter < redes.length; redFooter++) {
+//   redesFooter.innerHTML += `
+//     <a class="${redes[redFooter].img} iconRed bgContain" href="${redes[redFooter].link}" target="_blank"></a>
+//   `;
+// }
