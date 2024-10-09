@@ -47,7 +47,7 @@ h2 {
   z-index: -1;
 }
 
-.hero{
+.hero {
   position: relative;
   z-index: 1;
 }
@@ -97,7 +97,7 @@ h2 {
   padding: 3rem 0 !important;
 }
 
-.imgTecnologiaAbsoluta{
+.imgTecnologiaAbsoluta {
   width: 90vw;
   height: 30vh;
   background-image: url("/content/images/home/widd2020_home.jpg");
@@ -143,15 +143,15 @@ h2 {
     font-size: 0.625rem;
   }
 
-  .section1{
+  .section1 {
     background-position: right -230px center;
   }
 
-  .section2{
+  .section2 {
     background-position: right -190px center;
   }
 
-  .imgTecnologiaAbsoluta{
+  .imgTecnologiaAbsoluta {
     height: 40vh;
   }
 }
@@ -168,7 +168,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 630px){
+@media only screen and (min-width: 630px) {
   .section2 {
     background-position: right -150px center;
   }
@@ -212,6 +212,7 @@ h2 {
 }
 
 @media only screen and (min-width: 770px) {
+
   h1,
   h2 {
     font-size: 1.875rem;
@@ -230,13 +231,14 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 840px){
+@media only screen and (min-width: 840px) {
   .imgTecnologiaAbsoluta {
     width: 86vw;
   }
 }
 
 @media only screen and (min-width: 900px) {
+
   h1,
   h2 {
     font-size: 2.125rem;
@@ -326,23 +328,26 @@ h2 {
     background-image: url("/content/images/home/sole_banner_reversed.jpg");
   }
 
-  .section3{
+  .section3 {
     display: flex;
     flex-direction: row;
   }
 
-  .section3 .content{
+  .section3 .content {
+    align-self: center;
     margin-bottom: 3rem;
   }
 
-  .imgTecnologiaAbsoluta{
+  .imgTecnologiaAbsoluta {
     width: 50vw;
     height: 100%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 2.675rem;
   }
 
@@ -352,7 +357,9 @@ h2 {
 }
 
 @media only screen and (min-width: 1440px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 2.875rem;
   }
 
@@ -369,7 +376,7 @@ h2 {
   .reversed {
     max-width: 850px;
   }
-  
+
   .content p {
     font-size: 1.125rem;
   }

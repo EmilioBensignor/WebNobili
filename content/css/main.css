@@ -20,7 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Clases */
+/* Width & Height */
 
 .w-100 {
   width: 100% !important;
@@ -33,6 +33,8 @@ body {
 .h-100vh {
   height: 100vh !important;
 }
+
+/* Flex */
 
 .d-none {
   display: none !important;
@@ -75,6 +77,8 @@ body {
   align-items: center;
 }
 
+/* Backgrounds & Fonts */
+
 .bgContain {
   background-size: contain;
   background-repeat: no-repeat;
@@ -87,12 +91,12 @@ body {
   background-position: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .bg-white {
   background-color: var(--color-white);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-white {
@@ -102,6 +106,12 @@ body {
 .text-black {
   color: var(--color-black);
 }
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* Spacing */
 
 .pa-1 {
   padding: 1rem;
