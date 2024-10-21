@@ -19,7 +19,6 @@ main {
 
 .heroVanguardia {
   height: 90vh;
-  background-position: left;
   justify-content: flex-end;
   gap: 0.625rem;
   color: white;
@@ -80,7 +79,7 @@ main {
 }
 
 .caracteristica img {
-  width: 100%;
+  width: auto;
   margin-bottom: 3.125rem;
 }
 
@@ -106,6 +105,7 @@ main {
   border-radius: 999px;
   color: white;
   font-size: 0.75rem;
+  font-family: 'Gotham Pro', sans-serif;
   transform: translateY(-50%);
   cursor: pointer;
   margin: 0 auto;
@@ -116,29 +116,31 @@ main {
   height: 100%;
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
   max-width: 700px;
   width: 80%;
-  background-color: #fff;
+  position: relative;
+  background-color: #000;
   border-radius: 10px;
   text-align: center;
   margin: 15% auto;
-  padding: 20px;
+  padding: 6px;
 }
 
 .close {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: -1.75rem;
+  right: -1.25rem;
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: white;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -282,7 +284,7 @@ main {
 
   .mainSection {
     gap: 6.25rem;
-    padding: 6.25rem 0 6.25rem 5.625rem;
+    padding: 6.25rem 5.625rem;
   }
 
   .mainSection p {
@@ -317,10 +319,21 @@ main {
   .caracteristicasContainer .caracteristica:nth-child(2),
   .caracteristicasContainer .caracteristica:nth-child(4) {
     flex-direction: row;
+    gap: 3.25rem;
+  }
+
+  .caracteristicasContainer .caracteristica:nth-child(2) h2,
+  .caracteristicasContainer .caracteristica:nth-child(3) h2,
+  .caracteristicasContainer .caracteristica:nth-child(4) h2,
+  .caracteristicasContainer .caracteristica:nth-child(2) p,
+  .caracteristicasContainer .caracteristica:nth-child(3) p,
+  .caracteristicasContainer .caracteristica:nth-child(4) p {
+    text-align: start;
   }
 
   .caracteristicasContainer .caracteristica:nth-child(3) {
     flex-direction: row-reverse;
+    gap: 3.25rem;
   }
 }
 

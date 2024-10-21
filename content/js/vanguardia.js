@@ -99,21 +99,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let modal = document.getElementById("videoModal");
   let reproducirVideo = document.getElementById("reproducirVideo");
   let closeModalBtn = document.getElementById("closeModalBtn");
+  let youtubeIframe = document.getElementById("youtubeIframe");
+  let videoUrl = "https://www.youtube.com/embed/hoDM-rqrIU4?si=vLnymYNQr1y4PglZ";
 
-  // Open the modal
+  // Open the modal and autoplay the video
   reproducirVideo.onclick = function () {
+    youtubeIframe.src = videoUrl + "&autoplay=1";
     modal.style.display = "block";
   }
 
-  // Close the modal
+  // Close the modal and stop the video
   closeModalBtn.onclick = function () {
     modal.style.display = "none";
+    youtubeIframe.src = "";
   }
 
   // Close the modal when clicking outside of the modal content
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      youtubeIframe.src = "";
     }
   }
 });

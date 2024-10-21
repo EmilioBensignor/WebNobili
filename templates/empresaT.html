@@ -68,7 +68,7 @@
       </div>
       <div class="caracteristica">
         <div>
-          <video src="/content/images/home/corporate.mp4"></video>
+          <video src="/content/images/home/corporate.mp4" autoplay muted loop></video>
           <button id="reproducirVideo" class="reproducirVideo">REPRODUCIR</button>
         </div>
         <h2>REALIDAD ÚNICA</h2>
@@ -80,8 +80,7 @@
       <div id="videoModal" class="modal">
         <div class="modal-content">
           <span id="closeModalBtn" class="close">&times;</span>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/NXr3y2kN3GA?si=OWcqPOkk3TuT_sA2"
-            title="YouTube video player" frameborder="0"
+          <iframe id="youtubeIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
