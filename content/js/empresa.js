@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// PDF
+function openPDF() {
+  window.open('/content/images/empresa/nobili_company_profile.pdf', '_blank');
+}
 
 // Swiper
 const swiperWrapper = document.getElementById("swiperWrapper");
