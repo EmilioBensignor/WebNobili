@@ -17,7 +17,7 @@ a:hover {
 }
 
 /* Muestra Grifo */
-.grifoMuestraMobile{
+.grifoMuestraMobile {
   width: 80%;
   margin: 1.5rem 0;
 }
@@ -115,7 +115,8 @@ a:hover {
   color: #1a1a1a;
 }
 
-.accordion p {
+.accordion p,
+.relacionados>p {
   text-align: start;
   font-size: 0.75rem;
   font-family: 'Gotham Pro', sans-serif;
@@ -160,7 +161,7 @@ a:hover {
   gap: 0.75rem;
 }
 
-.panelWrap img{
+.panelWrap img {
   width: 1.75rem;
   height: 1.75rem;
 }
@@ -193,6 +194,53 @@ a:hover {
   cursor: pointer;
 }
 
+.relacionados {
+  gap: 0.875rem;
+  padding: 0.75rem 0;
+}
+
+.relacionados>div {
+  gap: 0.875rem;
+}
+
+.modeloRelacionado {
+  justify-content: space-between;
+  gap: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.detalleImg {
+  gap: 0.875rem;
+}
+
+.relacionadoDetalle {
+  max-width: 158px;
+  gap: 0.25rem;
+}
+
+.relacionadoDetalle p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #757070;
+}
+
+.relacionadoDetalle p:first-of-type {
+  font-size: 1rem;
+  color: #1A1A1A;
+}
+
+.verRelacionado {
+  width: 1.75rem !important;
+  height: 1.75rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1A1A1A;
+  border-radius: 999px;
+}
+
 .dondeComprar {
   display: flex;
   align-items: center;
@@ -213,6 +261,12 @@ a:hover {
   background-image: url("/content/images/modelo/Icon-Donde.svg");
 }
 
+@media only screen and (min-width: 360px) {
+  .relacionadoDetalle {
+    max-width: 100%;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   .grifoMuestraMobile {
     max-width: 430px;
@@ -225,6 +279,7 @@ a:hover {
   }
 
   .grifoMuestra {
+    width: 30%;
     display: block;
   }
 
@@ -240,10 +295,11 @@ a:hover {
   }
 
   .grifoMuestra img {
-    width: 90%;
+    width: 100%;
   }
 
   .muestraInfo {
+    width: 70%;
     gap: 1.5rem;
   }
 
@@ -276,7 +332,8 @@ a:hover {
     padding: 1rem 0;
   }
 
-  .accordion p {
+  .accordion p,
+  .relacionados>p {
     font-size: 0.875rem;
   }
 
@@ -291,7 +348,7 @@ a:hover {
     font-size: 0.875rem;
   }
 
-  .panelWrap img{
+  .panelWrap img {
     width: 2rem;
     height: 2rem;
   }
@@ -299,6 +356,10 @@ a:hover {
   .descargar div .iconDescargar {
     width: 0.875rem;
     height: 0.802rem;
+  }
+
+  .modeloRelacionado {
+    justify-content: space-around;
   }
 
   .dondeComprar {
@@ -345,7 +406,8 @@ a:hover {
     padding: 1.25rem 0;
   }
 
-  .accordion p {
+  .accordion p,
+  .relacionados>p {
     font-size: 1rem;
   }
 
@@ -380,6 +442,39 @@ a:hover {
   .descargar div .iconDescargar {
     width: 1rem;
     height: 0.917rem;
+  }
+
+  .modeloRelacionado {
+    justify-content: space-between;
+  }
+
+  .detalleImg {
+    gap: 2rem;
+  }
+
+  .detalleImg>img {
+    width: 6.25rem;
+  }
+
+  .relacionadoDetalle {
+    gap: 0.5rem;
+  }
+
+  .relacionadoDetalle p:first-of-type {
+    font-size: 1.25rem;
+  }
+
+  .relacionadoDetalle p {
+    font-size: 0.875rem;
+  }
+
+  .verRelacionado {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  .verRelacionado img {
+    width: 0.875rem;
   }
 
   .dondeComprar .iconDonde {
@@ -437,10 +532,48 @@ a:hover {
   .panelWrap>div {
     width: auto;
   }
-}
 
-@media only screen and (min-width: 1280px) {
   .modelo {
     gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .grifoMuestra {
+    max-width: 100%;
+  }
+
+  .acabado,
+  .headMuestra,
+  .accordion,
+  .panel,
+  .dondeComprar,
+  .accordionsContainer>div {
+    max-width: 100%;
+  }
+
+  .detalleImg>img {
+    width: 7.5rem;
+  }
+
+  .relacionadoDetalle {
+    gap: 0.75rem;
+  }
+
+  .relacionadoDetalle p:first-of-type {
+    font-size: 1.375rem;
+  }
+
+  .relacionadoDetalle p {
+    font-size: 1rem;
+  }
+
+  .verRelacionado {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+
+  .verRelacionado img {
+    width: 1.5rem;
   }
 }
