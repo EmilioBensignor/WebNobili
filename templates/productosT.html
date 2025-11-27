@@ -4,34 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#FCB716" />
-  <title>Nobili</title>
-  <meta name="description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
+  <title>Productos Nobili | Grifería de Alta Calidad para Baños y Cocinas</title>
+  <meta name="description" content="Explora la selección de grifería de alta gama de Nobili. Diseño innovador y funcionalidad para baños y cocinas. Calidad garantizada en cada producto.">
   <meta name="keywords"
-    content="creative, works, showcase, portfolio, highlight, projects, parallax, agency, digital, studio, css, animation, transition, svg, html, css">
-  <meta property="og:title" content="Benteveo">
-  <meta property="og:description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
-  <meta property="og:url" content="http://www.themezinho.net/unicord">
-  <meta name="author" content="Benteveo">
-  <meta property="og:image" content="http://www.themezinho.net/unicord/preview.png">
-  <meta property="og:site_name" content="Benteveo">
-  <meta property="og:type" content="website">
+    content="Grifería de alta calidad, productos Nobili, grifos para baños, grifos para cocinas, grifería de diseño, grifería premium, innovaciones en grifería, grifería Vasser, grifos modernos.">
   <!--head-->
   <link rel="stylesheet" href="/content/css/productos.css">
+	<script>
+		var getURLParameter = function (name) {
+		 return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+	  }
+	</script>
 </head>
 
-<body onload="filtrarProductos('bano');">
+<body onload="document.getElementById(getURLParameter('tipo')).click();">
   <!--header-->
   <main class="w-100 bg-white">
     <div class="filterContainer justifyAlignCenter text-center">
       <!--tipoproducto-->
-        <button class="filterButton" onclick="filtrarProductos('<!--cod-->')"><!--des--></button>
+        <button id="<!--cod-->" class="filterButton" onclick="filtrarProductos('<!--cod-->')"><!--des--></button>
       <!--fintipoproducto-->
     </div>
     <div id="productList" class="productList">
       <!--producto-->
-        <a href="/cgi-bin/nbproducto.pl?id=<!--id-->" data-tipo="<!--tip-->" class="productItem columnAlignCenter text-center">
-          <img src="/images/<!--img-->" alt="<!--nom-->" />
+        <a href="/<!--cod-->.html" data-tipo="<!--tip-->" class="productItem columnAlignCenter text-center">
+          <img src="/images/<!--img-->" alt="<!--nom-->" width="200" height="210" />
           <div class="productDescription columnAlignCenter">
             <p><!--des--></p>
             <p><!--dsn--></p>

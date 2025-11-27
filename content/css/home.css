@@ -79,14 +79,14 @@ h2 {
 /* Sections */
 
 .section1 {
-  background-image: url("/content/images/home/sole_banner.jpg");
+  background-image: url("/content/images/home/sole_banner.webp");
   background-position: right -250px center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .section2 {
-  background-image: url("/content/images/home/respiro_banner.jpg");
+  background-image: url("/content/images/home/respiro_banner.webp");
   background-position: right -300px center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ h2 {
 .imgTecnologiaAbsoluta {
   width: 90vw;
   height: 30vh;
-  background-image: url("/content/images/home/widd2020_home.jpg");
+  background-image: url("/content/images/home/widd2020_home.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -325,7 +325,7 @@ h2 {
   }
 
   .section1 {
-    background-image: url("/content/images/home/sole_banner_reversed.jpg");
+    background-image: url("/content/images/home/sole_banner_reversed.webp");
   }
 
   .section3 {

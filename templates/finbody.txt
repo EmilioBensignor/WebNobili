@@ -1,2 +1,3 @@
+<script type="text/javascript" nonce="{place_your_nonce_value_here}" src="https://desk.zoho.com/org/851713604/gc/widgets/983515000005128070/embed/script" defer></script>
 <script src="/content/js/main.js"></script>
 <script src="/content/js/headerFooter.js"></script>

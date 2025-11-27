@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/content/css/gotham.css">
 <link rel="stylesheet" href="/content/css/main.css">
 <link rel="stylesheet" href="/content/css/headerFooter.css">
-<meta property="og:title" content="Grifería de Alta Calidad | Nobili - Vasser - Innovación y Estilo en Baños y Cocinas">
+<meta property="og:title" content="Grifería de Alta Calidad | Nobili - Innovación y Estilo en Baños y Cocinas">
 <meta property="og:description" content="Nobili ofrece grifería premium que combina diseño innovador y funcionalidad para baños y cocinas. Descubre nuestra amplia gama de productos que destacan por su durabilidad y estilo, elevando el estándar en cada espacio.">
 <meta property="og:url" content="https://nobili.com.ar/">
 <meta property="og:image" content="https://nobili.com.ar/content/images/img-logo-nobili.jpg">

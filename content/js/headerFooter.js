@@ -13,8 +13,20 @@ const menuFooter = [
     link: "/productos.html",
   },
   {
+    title: "EMPRESA",
+    link: "/empresa.html",
+  },
+  {
+    title: "VANGUARDIA",
+    link: "/vanguardia.html",
+  },
+  {
+    title: "DÓNDE COMPRAR",
+    link: "/donde-comprar.html",
+  },
+  {
     title: "CATÁLOGO",
-    link: "https://www.flipsnack.com/9ABE9FAF8D6/cat-logo-nobili/full-view.html",
+    link: "https://nobili.com.ar/catalogo-nobili-2025.pdf",
     target: true,
   },
 ];

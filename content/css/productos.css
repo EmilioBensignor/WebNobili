@@ -16,7 +16,7 @@ header {
   font-family: 'Gotham Pro', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(26, 26, 26, 0.3);
+  color: #757070;
   cursor: pointer;
 }
 
@@ -46,6 +46,7 @@ header {
 
 .productItem img {
   width: 8.125rem;
+  height: auto;
 }
 
 .productDescription {
@@ -63,7 +64,7 @@ header {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 14px;
-  color: rgba(26, 26, 26, 0.4);
+  color: #757070;
 }
 
 /* Tablet */

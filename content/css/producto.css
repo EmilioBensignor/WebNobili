@@ -159,7 +159,7 @@ main {
 }
 
 .detalle p {
-  color: #1A1A1A66;
+  color: #757070;
   font-size: 0.75rem;
   font-weight: 500;
   margin-bottom: 0.875rem;
@@ -431,6 +431,7 @@ main {
 
   .opcionesModelos {
     gap: 4.125rem;
+    justify-content: space-evenly;
   }
 
   .modelo {

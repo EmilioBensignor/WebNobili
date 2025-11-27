@@ -7,11 +7,11 @@ window.addEventListener('scroll', function () {
 
   if (scrollPosition > 500) {
     header.style.backgroundColor = '#FFF';
-    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-negro.webp')";
+    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-negro.svg')";
     openNav.style.backgroundImage = "url('/content/images/header-footer/Hamburger-Black.svg')"
   } else {
     header.style.backgroundColor = 'transparent';
-    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-blanco.webp')";
+    logoNobili.style.backgroundImage = "url('/content/images/header-footer/logo-nobili-blanco.svg')";
     openNav.style.backgroundImage = "url('/content/images/header-footer/Hamburger-White.svg')"
   }
 });

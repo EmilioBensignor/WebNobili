@@ -71,11 +71,24 @@
   list-style-type: inherit;
 }
 
-.listPanel li a {
+.listPanel li p,
+.listPanel li p a{
   font-size: 0.75rem;
   color: var(--color-black);
-  text-decoration: none;
 }
+
+.listPanel li p {
+  font-weight: 500;
+}
+
+.listPanel li p a{
+  font-weight: 400;
+}
+
+.listPanel li a:hover{
+  color: #757070;
+}
+
 
 @media only screen and (min-width: 660px) {
   .dondeComprar {
@@ -97,7 +110,8 @@
 
   .accordion p,
   .panel p,
-  .listPanel li a {
+  .listPanel li p,
+  .listPanel li p a {
     font-size: 0.875rem;
   }
 }
@@ -134,7 +148,8 @@
 
   .accordion p,
   .panel p,
-  .listPanel li a {
+  .listPanel li p,
+  .listPanel li p a {
     font-size: 1rem;
   }
 }

@@ -1,32 +1,3 @@
-// Opciones Colores
-
-document.addEventListener('DOMContentLoaded', function () {
-  const opcionesColores = document.querySelectorAll('.bordeColor');
-  const grifoPrincipal = document.querySelector('#grifoPrincipal img');
-  const grifoPrincipalMobile = document.getElementById('grifoPrincipalMobile');
-  const nombreAcabado = document.getElementById('nombreAcabado');
-
-  opcionesColores.forEach(opcion => {
-    opcion.addEventListener('click', function () {
-      document.querySelector('.bordeColor[data-selected="true"]').setAttribute('data-selected', 'false');
-
-      this.setAttribute('data-selected', 'true');
-      // Obtener la nueva URL de la imagen
-      const nuevaImagenSrc = this.getAttribute('data-image');
-
-      if (grifoPrincipal) {
-        grifoPrincipal.src = nuevaImagenSrc;
-      }
-
-      if (grifoPrincipalMobile) {
-        grifoPrincipalMobile.src = nuevaImagenSrc;
-      }
-
-      nombreAcabado.textContent = this.getAttribute('data-color');
-    });
-  });
-});
-
 // Accordions
 
 const accordions = document.getElementsByClassName("accordion");
