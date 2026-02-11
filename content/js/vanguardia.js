@@ -82,18 +82,16 @@ const caracteristicas = [
   },
 ];
 
-if (caracteristicasContainer) {
-  for (let caracteristica = 0; caracteristica < caracteristicas.length; caracteristica++) {
-    caracteristicasContainer.innerHTML += `
-      <div class="caracteristica">
-        <img class="imgCaracteristica" src="/content/images/vanguardia/${caracteristicas[caracteristica].img}.webp" alt="${caracteristicas[caracteristica].alt}">
-        <div>
-          <h2>${caracteristicas[caracteristica].title}</h2>
-          <p>${caracteristicas[caracteristica].text}</p>
-        </div>
+for (let caracteristica = 0; caracteristica < caracteristicas.length; caracteristica++) {
+  caracteristicasContainer.innerHTML += `
+    <div class="caracteristica">
+      <img class="imgCaracteristica" src="/content/images/vanguardia/${caracteristicas[caracteristica].img}.webp" alt="${caracteristicas[caracteristica].alt}">
+      <div>
+        <h2>${caracteristicas[caracteristica].title}</h2>
+        <p>${caracteristicas[caracteristica].text}</p>
       </div>
-    `;
-  }
+    </div>
+  `;
 }
 
 // Video Caracteristicas + Modal
@@ -105,186 +103,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let videoUrl = "https://www.youtube.com/embed/hoDM-rqrIU4?si=vLnymYNQr1y4PglZ";
 
   // Open the modal and autoplay the video
-  if (reproducirVideo) {
-    reproducirVideo.onclick = function () {
-      youtubeIframe.src = videoUrl + "&autoplay=1";
-      modal.style.display = "block";
-    }
+  reproducirVideo.onclick = function () {
+    youtubeIframe.src = videoUrl + "&autoplay=1";
+    modal.style.display = "block";
   }
 
   // Close the modal and stop the video
-  if (closeModalBtn) {
-    closeModalBtn.onclick = function () {
+  closeModalBtn.onclick = function () {
+    modal.style.display = "none";
+    youtubeIframe.src = "";
+  }
+
+  // Close the modal when clicking outside of the modal content
+  window.onclick = function (event) {
+    if (event.target == modal) {
       modal.style.display = "none";
       youtubeIframe.src = "";
     }
   }
-
-  // Close the modal when clicking outside of the modal content
-  if (modal) {
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        youtubeIframe.src = "";
-      }
-    }
-  }
 });
-
-// Image Comparison Slider
-const ImageComparison = (() => {
-  const instances = new WeakMap();
-
-  const createHandle = (container) => {
-    const handle = document.createElement('div');
-    handle.className = 'comparison-handle';
-
-    const circle = document.createElement('div');
-    circle.className = 'comparison-handle-circle';
-
-    handle.appendChild(circle);
-    container.appendChild(handle);
-
-    return handle;
-  };
-
-  const updatePosition = (container, handle, beforeImg, percentage) => {
-    const boundedPercentage = Math.max(0, Math.min(100, percentage));
-
-    handle.style.left = boundedPercentage + '%';
-    beforeImg.style.clipPath = `inset(0 ${100 - boundedPercentage}% 0 0)`;
-
-    return boundedPercentage;
-  };
-
-  const getPosition = (event, container) => {
-    const rect = container.getBoundingClientRect();
-    const isTouch = event.touches !== undefined;
-    const clientX = isTouch ? event.touches[0].clientX : event.clientX;
-
-    const x = clientX - rect.left;
-    return (x / rect.width) * 100;
-  };
-
-  const init = (selector, options = {}) => {
-    const containers = Array.isArray(selector)
-      ? selector
-      : document.querySelectorAll(selector);
-
-    containers.forEach(container => {
-      // Evitar inicializar dos veces el mismo elemento
-      if (instances.has(container)) {
-        return;
-      }
-
-      const afterImg = container.querySelector('.comparison-after');
-      const beforeImg = container.querySelector('.comparison-before');
-
-      if (!afterImg || !beforeImg) {
-        console.warn('Image comparison slider requires .comparison-after and .comparison-before images');
-        return;
-      }
-
-      const initialPosition = options.initialPosition ?? 50;
-      const handle = createHandle(container);
-
-      let isActive = false;
-
-      // Posición inicial
-      updatePosition(container, handle, beforeImg, initialPosition);
-
-      // Mouse events
-      const onMouseDown = () => {
-        isActive = true;
-      };
-
-      const onMouseUp = () => {
-        isActive = false;
-      };
-
-      const onMouseMove = (e) => {
-        if (!isActive) return;
-        const percentage = getPosition(e, container);
-        updatePosition(container, handle, beforeImg, percentage);
-      };
-
-      // Touch events
-      const onTouchStart = () => {
-        isActive = true;
-      };
-
-      const onTouchEnd = () => {
-        isActive = false;
-      };
-
-      const onTouchMove = (e) => {
-        if (!isActive) return;
-        e.preventDefault();
-        const percentage = getPosition(e, container);
-        updatePosition(container, handle, beforeImg, percentage);
-      };
-
-      // Registrar event listeners
-      container.addEventListener('mousedown', onMouseDown);
-      document.addEventListener('mouseup', onMouseUp);
-      document.addEventListener('mousemove', onMouseMove);
-
-      container.addEventListener('touchstart', onTouchStart);
-      container.addEventListener('touchend', onTouchEnd);
-      container.addEventListener('touchmove', onTouchMove, { passive: false });
-
-      // Click directo en el container
-      container.addEventListener('click', (e) => {
-        const percentage = getPosition(e, container);
-        updatePosition(container, handle, beforeImg, percentage);
-      });
-
-      // Guardar listeners para limpiar después
-      const state = {
-        onMouseDown,
-        onMouseUp,
-        onMouseMove,
-        onTouchStart,
-        onTouchEnd,
-        onTouchMove
-      };
-
-      instances.set(container, state);
-    });
-  };
-
-  const destroy = (selector) => {
-    const containers = Array.isArray(selector)
-      ? selector
-      : document.querySelectorAll(selector);
-
-    containers.forEach(container => {
-      const state = instances.get(container);
-
-      if (state) {
-        container.removeEventListener('mousedown', state.onMouseDown);
-        document.removeEventListener('mouseup', state.onMouseUp);
-        document.removeEventListener('mousemove', state.onMouseMove);
-
-        container.removeEventListener('touchstart', state.onTouchStart);
-        container.removeEventListener('touchend', state.onTouchEnd);
-        container.removeEventListener('touchmove', state.onTouchMove);
-
-        const handle = container.querySelector('.comparison-handle');
-        if (handle) {
-          handle.remove();
-        }
-
-        instances.delete(container);
-      }
-    });
-  };
-
-  return {
-    init,
-    destroy
-  };
-})();
-
-// Exportar globalmente para uso en HTML
-window.initImageComparison = ImageComparison.init;
