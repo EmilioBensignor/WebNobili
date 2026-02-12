@@ -10,12 +10,20 @@
   <meta name="keywords"
     content="Nobili vanguardia, eficiencia en diseño, innovación tecnológica, productos baño, productos cocina, laboratorio Nobili, pruebas de calidad, diseño avanzado, bienestar cotidiano, tecnología avanzada">
   <!--head-->
+  <link rel="stylesheet" href="/content/css/widd.css">
+  <link rel="stylesheet" href="/content/css/widd2020.css">
   <link rel="stylesheet" href="/content/css/vanguardia.css">
 </head>
 
 <body>
   <!--header-->
   <main class="w-100 bg-white">
+    <nav class="navTabs">
+      <a href="/vanguardia.html" class="active">TECNOLOGÍA</a>
+      <a href="/widd.html">WIDD®</a>
+      <a href="/widd-2020.html">WIDD® 2020</a>
+      <a href="/thermotech.html">THERMOTECH®</a>
+    </nav>
     <section class="heroVanguardia bgCover column"
       style="background-image: url('/content/images/vanguardia/vanguardia-header.webp')">
       <div>
@@ -23,35 +31,34 @@
         <p>CÓMO NACE UN PRODUCTO NOBILI</p>
       </div>
     </section>
-    <section class="mainSection columnAlignCenter">
+    <section class="introSection columnAlignCenter">
       <p class="text-center">
         Eficiencia funcional por encima de todo: esta es la regla que siempre ha regido el diseño de un nuevo modelo y
         su posterior producción. Sin descuidar los componentes estéticos, por supuesto, pero siempre supeditándolos a
         aquellas características que permiten que un mezclador sea un instrumento de bienestar y agrado en el uso
         cotidiano.
       </p>
-      <div class="caracteristicasContainer columnAlignCenter" id="caracteristicasContainer"></div>
-      <div class="caracteristica">
-        <div>
-          <video src="/content/images/vanguardia/laboratorio.mp4" autoplay muted loop playsinline></video>
-          <button id="reproducirVideo" class="reproducirVideo">REPRODUCIR</button>
-        </div>
-        <h2>LABORATORIO</h2>
-        <p>El Nobili Technology Centre está equipado con un laboratorio de análisis altamente eficaz. Allí probamos
-          continuamente la calidad de los procesos y las materias primas utilizadas en la producción de nuestros
-          productos, dedicando más de 2000 horas al año a las pruebas de laboratorio: 20 instalaciones de última
-          generación protegen así las avanzadas características de nuestra marca.</p>
-      </div>
-      <div id="videoModal" class="modal">
-        <div class="modal-content">
-          <span id="closeModalBtn" class="close">&times;</span>
-          <iframe id="youtubeIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
     </section>
+    <div class="caracteristicasContainer columnAlignCenter" id="caracteristicasContainer"></div>
+    <section class="widdFullSection columnAlignCenter">
+      <div class="widdVideoWrapper">
+        <video src="/content/images/vanguardia/laboratorio.mp4" autoplay muted loop playsinline></video>
+        <button id="reproducirVideo" class="reproducirVideo">REPRODUCIR</button>
+      </div>
+      <h2>LABORATORIO</h2>
+      <p>El Nobili Technology Centre está equipado con un laboratorio de análisis altamente eficaz. Allí probamos
+        continuamente la calidad de los procesos y las materias primas utilizadas en la producción de nuestros
+        productos, dedicando más de 2000 horas al año a las pruebas de laboratorio: 20 instalaciones de última
+        generación protegen así las avanzadas características de nuestra marca.</p>
     </section>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <iframe id="youtubeIframe" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
   </main>
   <!--footer-->
   <!--finbody-->

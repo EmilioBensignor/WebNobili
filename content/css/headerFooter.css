@@ -59,6 +59,10 @@ header {
   padding: 0 1rem;
 }
 
+.nav .maxWidth {
+  width: 100%;
+}
+
 .nav.open {
   height: 100%;
   overflow: hidden;
@@ -80,6 +84,7 @@ body.nav-open {
 }
 
 .navMenu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -101,6 +106,65 @@ body.nav-open {
 
 .navMenu .faded:not(:hover){
   opacity: 0.3;
+}
+
+.navAccordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.navAccordionToggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+  transition: opacity 0.3s ease;
+}
+
+.navAccordionArrow {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg) translateY(-60%);
+  transition: transform 0.3s ease;
+}
+
+.navAccordion.open .navAccordionArrow {
+  transform: rotate(-135deg);
+}
+
+.navAccordionMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 0 0 0;
+}
+
+.navAccordion.open .navAccordionMenu {
+  max-height: 12.5rem;
+  padding: 1rem 0 0 0;
+}
+
+.navAccordionMenu li {
+  list-style: none;
+}
+
+.navAccordionMenu li a {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* Footer */

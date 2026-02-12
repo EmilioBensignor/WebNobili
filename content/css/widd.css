@@ -110,6 +110,9 @@ main {
   position: relative;
   overflow: hidden;
   cursor: ew-resize;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .comparison-container img {

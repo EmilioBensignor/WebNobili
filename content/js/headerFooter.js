@@ -70,6 +70,13 @@ document.getElementById('openNav').addEventListener('click', function () {
   document.body.classList.add('nav-open');
 });
 
+const navAccordionToggle = document.querySelector('.navAccordionToggle');
+if (navAccordionToggle) {
+  navAccordionToggle.addEventListener('click', function () {
+    this.closest('.navAccordion').classList.toggle('open');
+  });
+}
+
 document.getElementById('closeNav').addEventListener('click', function () {
   document.querySelector('.nav').classList.remove('open');
   document.body.classList.remove('nav-open');
