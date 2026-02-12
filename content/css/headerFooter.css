@@ -108,6 +108,10 @@ body.nav-open {
   opacity: 0.3;
 }
 
+.navVanguardiaLink {
+  display: none;
+}
+
 .navAccordion {
   display: flex;
   flex-direction: column;
@@ -281,6 +285,14 @@ footer .footerTop img {
 
   .nav.open {
     padding: 3.125rem 3.75rem;
+  }
+
+  .navAccordion {
+    display: none;
+  }
+
+  .navVanguardiaLink {
+    display: list-item;
   }
 
   /* Footer */
