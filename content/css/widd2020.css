@@ -1,0 +1,46 @@
+header {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+#logoNobili {
+  background-image: url("/content/images/header-footer/logo-nobili-blanco.svg");
+}
+
+#openNav {
+  background-image: url("/content/images/header-footer/Hamburger-White.svg");
+}
+
+.navTabs a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navTabs a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navTabs a.active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navTabs {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.heroWidd {
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 660px) {
+  .caracteristica img {
+    max-height: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .caracteristicasContainer .caracteristica,
+  .caracteristica {
+    max-width: 900px;
+  }
+}
